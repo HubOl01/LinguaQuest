@@ -35,7 +35,8 @@ model User {
   photos        Photo[]
   userAnswer    UserAnswer[]
   learnQuizUser LearnQuizUser[]
-  StudyHistory  StudyHistory[]
+  studyHistory  StudyHistory[]
+  comment       Comment[]
 }
 
 model Profile {
@@ -103,6 +104,7 @@ model Post {
   likes             Like[]
   views             View[]
   photos            Photo[]
+  comment           Comment[]
 }
 
 model PublicationStatus {
@@ -135,6 +137,18 @@ model View {
   userId       Int
   postId       Int
   date_created DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [idUser])
+  post Post @relation(fields: [postId], references: [idPost])
+}
+
+model Comment {
+  idComment    Int      @id @default(autoincrement())
+  userId       Int
+  postId       Int
+  content      String
+  date_created DateTime @default(now())
+  date_updated DateTime @updatedAt
 
   user User @relation(fields: [userId], references: [idUser])
   post Post @relation(fields: [postId], references: [idPost])
@@ -239,7 +253,7 @@ model StudyHistory {
   languageId     Int
   lessonId       Int
   xpGained       Int
-  dateStudied    DateTime @default(now())
+  data_created   DateTime @default(now())
 
   user     User     @relation(fields: [userId], references: [idUser])
   language Language @relation(fields: [languageId], references: [idLanguage])
@@ -247,10 +261,10 @@ model StudyHistory {
 }
 
 model Achievement {
-  idAchievement Int    @id @default(autoincrement())
+  idAchievement Int      @id @default(autoincrement())
   idUser        Int
   name          String
   url_image     String
   description   String
-  data_created
+  data_created  DateTime @default(now())
 }
