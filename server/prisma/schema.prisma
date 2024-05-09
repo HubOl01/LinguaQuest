@@ -1,0 +1,256 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  idUser        Int             @id @default(autoincrement())
+  VKID          String?
+  TelegramID    String?
+  email         String          @unique
+  username      String
+  idUsername    String          @unique @default(dbgenerated("'user_'|| floor(random())::text"))
+  isAdmin       Boolean         @default(false)
+  isBan         Boolean         @default(false)
+  passwd        String?
+  streak        Int             @default(0)
+  xp            Int             @default(0)
+  date_created  DateTime        @default(now())
+  profile       Profile?
+  dictionary    Dictionary[]
+  bookmarks     Bookmark[]
+  posts         Post[]
+  likes         Like[]
+  views         View[]
+  photos        Photo[]
+  userAnswer    UserAnswer[]
+  learnQuizUser LearnQuizUser[]
+  StudyHistory  StudyHistory[]
+}
+
+model Profile {
+  idProfile Int      @id @default(autoincrement())
+  name      String?
+  birthday  DateTime
+  userId    Int      @unique
+
+  user User @relation(fields: [userId], references: [idUser])
+}
+
+model Rule {
+  idRule       Int      @id @default(autoincrement())
+  title        String
+  description  String
+  date_created DateTime @default(now())
+  date_updated DateTime @updatedAt
+  lessons      Lesson[]
+}
+
+model Dictionary {
+  idDictionary  Int      @id @default(autoincrement())
+  content       String
+  translate     String
+  transcription String?
+  audiofile     String?
+  userId        Int
+  date_created  DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [idUser])
+}
+
+model GlobalDictionary {
+  idGlobalDictionary Int      @id @default(autoincrement())
+  content            String
+  translate          String
+  transcription      String?
+  audiofile          String?
+  date_created       DateTime @default(now())
+}
+
+model Bookmark {
+  idBookmark   Int      @id @default(autoincrement())
+  userId       Int
+  rulesId      Int?
+  postsId      Int?
+  date_created DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [idUser])
+}
+
+model Post {
+  idPost              Int      @id @default(autoincrement())
+  title               String?
+  description         String
+  isDraft             Boolean  @default(true)
+  rejectionReason     String?
+  date_created        DateTime @default(now())
+  date_updated        DateTime @updatedAt
+  userId              Int
+  publicationStatusId Int      @default(0)
+
+  user              User              @relation(fields: [userId], references: [idUser])
+  publicationStatus PublicationStatus @relation(fields: [publicationStatusId], references: [idPublicationStatus])
+  likes             Like[]
+  views             View[]
+  photos            Photo[]
+}
+
+model PublicationStatus {
+  idPublicationStatus Int    @id @default(autoincrement())
+  status              String
+  posts               Post[]
+}
+
+model Photo {
+  idPhoto   Int    @id @default(autoincrement())
+  url_image String
+  postId    Int
+  userId    Int
+  post      Post   @relation(fields: [postId], references: [idPost])
+  user      User   @relation(fields: [userId], references: [idUser])
+}
+
+model Like {
+  idLike       Int      @id @default(autoincrement())
+  userId       Int
+  postId       Int
+  date_created DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [idUser])
+  post Post @relation(fields: [postId], references: [idPost])
+}
+
+model View {
+  idView       Int      @id @default(autoincrement())
+  userId       Int
+  postId       Int
+  date_created DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [idUser])
+  post Post @relation(fields: [postId], references: [idPost])
+}
+
+model Language {
+  idLanguage    Int             @id @default(autoincrement())
+  language      String
+  flagUrl       String?
+  data_created  DateTime        @default(now())
+  module        Module[]
+  learnQuizUser LearnQuizUser[]
+  StudyHistory  StudyHistory[]
+}
+
+model LearnQuizUser {
+  idLearnQuizUser Int      @id @default(autoincrement())
+  quizId          Int
+  score           BigInt
+  languageId      Int
+  data_created    DateTime @default(now())
+  userId          Int
+
+  quiz     Quiz     @relation(fields: [quizId], references: [idQuiz])
+  language Language @relation(fields: [languageId], references: [idLanguage])
+  user     User     @relation(fields: [userId], references: [idUser])
+}
+
+// Module, Lesson, Quiz, QuizType, QuizTest
+model Module {
+  idModule     Int      @id @default(autoincrement())
+  languageId   Int
+  title        String
+  description  String
+  data_created DateTime @default(now())
+  lessons      Lesson[]
+
+  language Language @relation(fields: [languageId], references: [idLanguage])
+}
+
+model Lesson {
+  idLesson     Int      @id @default(autoincrement())
+  moduleId     Int
+  title        String
+  description  String
+  ruleId       Int
+  data_created DateTime @default(now())
+  quizzes      Quiz[]
+
+  rule         Rule           @relation(fields: [ruleId], references: [idRule])
+  module       Module         @relation(fields: [moduleId], references: [idModule])
+  studyHistory StudyHistory[]
+}
+
+model Quiz {
+  idQuiz        Int             @id @default(autoincrement())
+  lessonId      Int
+  QuizTypeId    Int
+  question      String
+  answer        String
+  xp            Int
+  data_created  DateTime        @default(now())
+  quizTests     QuizTest[]
+  userAnswer    UserAnswer[]
+  learnQuizUser LearnQuizUser[]
+
+  quizType QuizType @relation(fields: [QuizTypeId], references: [idQuizType])
+  lesson   Lesson   @relation(fields: [lessonId], references: [idLesson])
+}
+
+model QuizType {
+  idQuizType Int    @id @default(autoincrement())
+  type       String
+  quiz       Quiz[]
+}
+
+model QuizTest {
+  idQuizTest Int     @id @default(autoincrement())
+  quizId     Int
+  answer     String?
+  word       String?
+  audiofile  String?
+  url_image  String?
+
+  quiz Quiz @relation(fields: [quizId], references: [idQuiz])
+}
+
+model UserAnswer {
+  idUserAnswer Int     @id @default(autoincrement())
+  userId       Int
+  quizId       Int
+  answer       String
+  isCorrect    Boolean
+
+  user User @relation(fields: [userId], references: [idUser])
+  quiz Quiz @relation(fields: [quizId], references: [idQuiz])
+}
+
+model StudyHistory {
+  idStudyHistory Int      @id @default(autoincrement())
+  userId         Int
+  languageId     Int
+  lessonId       Int
+  xpGained       Int
+  dateStudied    DateTime @default(now())
+
+  user     User     @relation(fields: [userId], references: [idUser])
+  language Language @relation(fields: [languageId], references: [idLanguage])
+  lesson   Lesson   @relation(fields: [lessonId], references: [idLesson])
+}
+
+model Achievement {
+  idAchievement Int    @id @default(autoincrement())
+  idUser        Int
+  name          String
+  url_image     String
+  description   String
+  data_created
+}

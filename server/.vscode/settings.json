@@ -1,0 +1,10 @@
+{
+    "[prisma]": {
+        "editor.defaultFormatter": "Prisma.prisma",
+        "editor.formatOnSaveMode": "file",
+      },
+      "editor.formatOnSave": true,
+      
+    "editor.formatOnSaveMode": "modificationsIfAvailable",
+    
+}
