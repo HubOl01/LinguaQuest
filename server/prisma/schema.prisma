@@ -18,7 +18,7 @@ model User {
   idUser        Int            @id @default(autoincrement())
   VKID          String?
   TelegramID    String?
-  email         String         @unique
+  email         String?        @unique
   username      String
   idUsername    String         @unique @default(dbgenerated("'user_'|| floor(random())::text"))
   isAdmin       Boolean        @default(false)
