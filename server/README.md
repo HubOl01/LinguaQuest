@@ -26,6 +26,8 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
+Swagger находится по ссылке http://localhost:3001/api
+
 ## Начало работы
 
 ```bash
