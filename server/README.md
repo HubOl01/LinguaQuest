@@ -41,4 +41,4 @@ yarn run start:dev
 ```sh
 npx nest generate resource
 ```
-потом пишем название к модели
+потом пишем название к модели (Например: users, profiles)
