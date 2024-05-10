@@ -27,6 +27,7 @@
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
 БД: https://app.diagrams.net/#G1qMoX_0aMvkrsfjCtqTvJloJQT3_1Wizx#%7B%22pageId%22%3A%22jkZSYkBuE20x1MwVfEJv%22%7D
+
 Swagger находится по ссылке http://localhost:3001/api
 
 ## Начало работы
