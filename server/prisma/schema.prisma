@@ -46,6 +46,7 @@ model User {
   recipients    Message[]      @relation("recipients")
   chatBot       ChatBot[]
   avatar        Avatar[]
+  weeklyRecord  WeeklyRecord[]
 }
 
 // Профиль человека
@@ -199,6 +200,7 @@ model Language {
   data_created DateTime       @default(now())
   module       Module[]
   studyHistory StudyHistory[]
+  WeeklyRecord WeeklyRecord[]
 }
 
 // Модуль
@@ -374,4 +376,28 @@ model Avatar {
   date_updated DateTime @updatedAt
 
   user User @relation(fields: [userId], references: [idUser])
+}
+
+// Модель записи рекордов за неделю
+model WeeklyRecord {
+  idWeeklyRecord Int      @id @default(autoincrement())
+  userId         Int
+  weekStartDate  DateTime
+  weekEndDate    DateTime
+  score          Int
+  languageId     Int
+  leagueId       Int
+
+  user     User     @relation(fields: [userId], references: [idUser])
+  language Language @relation(fields: [languageId], references: [idLanguage])
+  league   League   @relation(fields: [leagueId], references: [idLeague])
+}
+
+// Модель лиги
+model League {
+  idLeague     Int            @id @default(autoincrement())
+  name         String
+  minXP        Int // Минимальное количество опыта для перехода на следующий уровень
+  data_created DateTime       @default(now())
+  WeeklyRecord WeeklyRecord[]
 }
