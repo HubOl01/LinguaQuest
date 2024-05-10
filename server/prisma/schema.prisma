@@ -1,0 +1,403 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// Основной пользователь
+model User {
+  idUser        Int            @id @default(autoincrement())
+  VKID          String?
+  TelegramID    String?
+  email         String?        @unique
+  username      String
+  idUsername    String         @unique @default(dbgenerated("'user_'|| floor(random())::text"))
+  isAdmin       Boolean        @default(false)
+  isBan         Boolean        @default(false)
+  // passwd        String?
+  streak        Int            @default(0)
+  xp            Int            @default(0)
+  date_created  DateTime       @default(now())
+  profile       Profile?
+  dictionary    Dictionary[]
+  bookmarks     Bookmark[]
+  posts         Post[]
+  likes         Like[]
+  views         View[]
+  photos        PhotoForPost[]
+  userAnswer    UserAnswer[]
+  studyHistory  StudyHistory[]
+  comment       Comment[]
+  cardWord      CardWord[]
+  achievement   Achievement[]
+  ban           Ban[]
+  ReportedUsers Complaint[]    @relation("ReportedUsers")
+  OffenderUsers Complaint[]    @relation("OffenderUsers")
+  senders       Message[]      @relation("senders")
+  recipients    Message[]      @relation("recipients")
+  chatBot       ChatBot[]
+  avatar        Avatar[]
+  weeklyRecord  WeeklyRecord[]
+}
+
+// Профиль человека
+model Profile {
+  idProfile Int      @id @default(autoincrement())
+  name      String?
+  birthday  DateTime
+  userId    Int      @unique
+
+  user User @relation(fields: [userId], references: [idUser])
+}
+
+// Правила, справочники
+model Rule {
+  idRule       Int        @id @default(autoincrement())
+  title        String
+  description  String
+  date_created DateTime   @default(now())
+  date_updated DateTime   @updatedAt
+  lessons      Lesson[]
+  bookmark     Bookmark[]
+}
+
+// Словарь для каждого пользователя
+model Dictionary {
+  idDictionary  Int      @id @default(autoincrement())
+  content       String
+  translate     String
+  transcription String?
+  audiofile     String?
+  userId        Int
+  date_created  DateTime @default(now())
+
+  user     User       @relation(fields: [userId], references: [idUser])
+  cardWord CardWord[]
+}
+
+// Карточки слов
+model CardWord {
+  idCardWord   Int      @id @default(autoincrement())
+  dictionaryId Int
+  isCorrect    Boolean
+  userId       Int
+  date_created DateTime @default(now())
+
+  user       User       @relation(fields: [userId], references: [idUser])
+  dictionary Dictionary @relation(fields: [dictionaryId], references: [idDictionary])
+}
+
+// Словарь с массивами данных
+model GlobalDictionary {
+  idGlobalDictionary Int      @id @default(autoincrement())
+  content            String
+  translate          String
+  transcription      String?
+  audiofile          String?
+  date_created       DateTime @default(now())
+}
+
+// Закладки, сохранения постов к себе
+model Bookmark {
+  idBookmark   Int      @id @default(autoincrement())
+  userId       Int
+  ruleId       Int?
+  postId       Int?
+  date_created DateTime @default(now())
+
+  rule Rule? @relation(fields: [ruleId], references: [idRule])
+  post Post? @relation(fields: [postId], references: [idPost])
+  user User  @relation(fields: [userId], references: [idUser])
+}
+
+// Посты
+model Post {
+  idPost              Int      @id @default(autoincrement())
+  title               String?
+  description         String
+  isDraft             Boolean  @default(true)
+  rejectionReason     String?
+  date_created        DateTime @default(now())
+  date_updated        DateTime @updatedAt
+  userId              Int
+  publicationStatusId Int      @default(0)
+
+  user              User              @relation(fields: [userId], references: [idUser])
+  publicationStatus PublicationStatus @relation(fields: [publicationStatusId], references: [idPublicationStatus])
+  likes             Like[]
+  views             View[]
+  photos            PhotoForPost[]
+  comment           Comment[]
+  bookmark          Bookmark[]
+}
+
+// Статус публикации (Ожидает проверки, Опубликован, Отклонен)
+model PublicationStatus {
+  idPublicationStatus Int    @id @default(autoincrement())
+  status              String
+  posts               Post[]
+}
+
+// Фото/картинки для постов
+model PhotoForPost {
+  idPhoto   Int    @id @default(autoincrement())
+  url_image String
+  postId    Int
+  userId    Int
+  post      Post   @relation(fields: [postId], references: [idPost])
+  user      User   @relation(fields: [userId], references: [idUser])
+}
+
+// Лайки под постом
+model Like {
+  idLike       Int      @id @default(autoincrement())
+  userId       Int
+  postId       Int
+  date_created DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [idUser])
+  post Post @relation(fields: [postId], references: [idPost])
+}
+
+// Просмотры под постом
+model View {
+  idView       Int      @id @default(autoincrement())
+  userId       Int
+  postId       Int
+  date_created DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [idUser])
+  post Post @relation(fields: [postId], references: [idPost])
+}
+
+// Комментарии под постом
+model Comment {
+  idComment    Int      @id @default(autoincrement())
+  userId       Int
+  postId       Int
+  content      String
+  date_created DateTime @default(now())
+  date_updated DateTime @updatedAt
+
+  user User @relation(fields: [userId], references: [idUser])
+  post Post @relation(fields: [postId], references: [idPost])
+}
+
+// Языки
+model Language {
+  idLanguage   Int            @id @default(autoincrement())
+  language     String
+  flagUrl      String?
+  data_created DateTime       @default(now())
+  module       Module[]
+  studyHistory StudyHistory[]
+  WeeklyRecord WeeklyRecord[]
+}
+
+// Модуль
+model Module {
+  idModule     Int      @id @default(autoincrement())
+  languageId   Int
+  title        String
+  description  String
+  data_created DateTime @default(now())
+  lessons      Lesson[]
+
+  language     Language       @relation(fields: [languageId], references: [idLanguage])
+  studyHistory StudyHistory[]
+}
+
+// Уроки
+model Lesson {
+  idLesson     Int      @id @default(autoincrement())
+  moduleId     Int
+  title        String
+  description  String
+  ruleId       Int
+  data_created DateTime @default(now())
+  quizzes      Quiz[]
+
+  rule         Rule           @relation(fields: [ruleId], references: [idRule])
+  module       Module         @relation(fields: [moduleId], references: [idModule])
+  studyHistory StudyHistory[]
+}
+
+// Упражнения
+model Quiz {
+  idQuiz       Int          @id @default(autoincrement())
+  lessonId     Int
+  QuizTypeId   Int
+  question     String
+  answer       String
+  explanation  String?
+  audiofile    String?
+  url_image    String?
+  xp           Int
+  data_created DateTime     @default(now())
+  quizTests    QuizTest[]
+  userAnswer   UserAnswer[]
+
+  quizType QuizType @relation(fields: [QuizTypeId], references: [idQuizType])
+  lesson   Lesson   @relation(fields: [lessonId], references: [idLesson])
+}
+
+// Тип упражнения
+model QuizType {
+  idQuizType Int    @id @default(autoincrement())
+  type       String
+  quiz       Quiz[]
+}
+
+// В упражении есть варианты ответов, которые нужно выбрать
+model QuizTest {
+  idQuizTest Int     @id @default(autoincrement())
+  quizId     Int
+  answer     String?
+  word       String?
+
+  quiz Quiz @relation(fields: [quizId], references: [idQuiz])
+}
+
+// Итоговое прохождение упражнения
+model UserAnswer {
+  idUserAnswer Int     @id @default(autoincrement())
+  userId       Int
+  quizId       Int
+  answer       String
+  isCorrect    Boolean
+  xp           Int
+
+  user User @relation(fields: [userId], references: [idUser])
+  quiz Quiz @relation(fields: [quizId], references: [idQuiz])
+}
+
+// Прохождение изучения языков для одного пользователя (очки, языки)
+model StudyHistory {
+  idStudyHistory Int      @id @default(autoincrement())
+  userId         Int
+  moduleId       Int
+  languageId     Int
+  lessonId       Int
+  score          BigInt
+  data_created   DateTime @default(now())
+
+  user     User     @relation(fields: [userId], references: [idUser])
+  language Language @relation(fields: [languageId], references: [idLanguage])
+  lesson   Lesson   @relation(fields: [lessonId], references: [idLesson])
+  module   Module   @relation(fields: [moduleId], references: [idModule])
+}
+
+// Достижения за прохождение каких-то заданий
+model Achievement {
+  idAchievement Int      @id @default(autoincrement())
+  userId        Int
+  name          String
+  url_image     String
+  description   String
+  data_created  DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [idUser])
+}
+
+// бан пользователя (запрещает временно публиковать посты и переписываться)
+model Ban {
+  idBan        Int      @id @default(autoincrement())
+  userId       Int
+  reason       String
+  startDate    DateTime @default(now())
+  endDate      DateTime
+  date_created DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [idUser])
+}
+
+// жалобы пользователя
+model Complaint {
+  idComplaint    Int    @id @default(autoincrement())
+  complaintText  String
+  ReportedUserId Int
+  OffenderUserId Int
+
+  date_created DateTime @default(now())
+
+  reportedUser User @relation("ReportedUsers", fields: [ReportedUserId], references: [idUser])
+  offenderUser User @relation("OffenderUsers", fields: [OffenderUserId], references: [idUser])
+}
+
+// Общение с носителями языка
+model Message {
+  idMessage    Int      @id @default(autoincrement())
+  textMessage  String
+  date_created DateTime @default(now())
+  date_updated DateTime @updatedAt
+  senderId     Int
+  recipientId  Int
+
+  sender    User @relation("senders", fields: [senderId], references: [idUser])
+  recipient User @relation("recipients", fields: [recipientId], references: [idUser])
+}
+
+// Общение с чатботом 
+model ChatBot {
+  idChatBot    Int      @id @default(autoincrement())
+  textMessage  String
+  date_created DateTime @default(now())
+  userId       Int
+  botId        Int
+
+  user User @relation(fields: [userId], references: [idUser])
+  bot  Bot  @relation(fields: [botId], references: [idBot])
+}
+
+// Боты с нейросетями на разные темы
+model Bot {
+  idBot        Int       @id @default(autoincrement())
+  textGuide    String
+  token        String
+  date_created DateTime  @default(now())
+  ChatBot      ChatBot[]
+}
+
+// Аватар пользователя
+model Avatar {
+  idAvatar     Int      @id @default(autoincrement())
+  userId       Int
+  url_avatar   String
+  date_created DateTime @default(now())
+  date_updated DateTime @updatedAt
+
+  user User @relation(fields: [userId], references: [idUser])
+}
+
+// Модель записи рекордов за неделю
+model WeeklyRecord {
+  idWeeklyRecord Int      @id @default(autoincrement())
+  userId         Int
+  weekStartDate  DateTime
+  weekEndDate    DateTime
+  score          Int
+  languageId     Int
+  leagueId       Int
+
+  user     User     @relation(fields: [userId], references: [idUser])
+  language Language @relation(fields: [languageId], references: [idLanguage])
+  league   League   @relation(fields: [leagueId], references: [idLeague])
+}
+
+// Модель лиги
+model League {
+  idLeague     Int            @id @default(autoincrement())
+  name         String
+  minXP        Int // Минимальное количество опыта для перехода на следующий уровень
+  data_created DateTime       @default(now())
+  WeeklyRecord WeeklyRecord[]
+}
