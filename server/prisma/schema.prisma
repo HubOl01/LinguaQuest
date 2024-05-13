@@ -197,7 +197,7 @@ model Language {
   idLanguage   Int            @id @default(autoincrement())
   language     String
   flagUrl      String?
-  data_created DateTime       @default(now())
+  date_created DateTime       @default(now())
   module       Module[]
   studyHistory StudyHistory[]
   WeeklyRecord WeeklyRecord[]
@@ -209,7 +209,7 @@ model Module {
   languageId   Int
   title        String
   description  String
-  data_created DateTime @default(now())
+  date_created DateTime @default(now())
   lessons      Lesson[]
 
   language     Language       @relation(fields: [languageId], references: [idLanguage])
@@ -223,7 +223,7 @@ model Lesson {
   title        String
   description  String
   ruleId       Int
-  data_created DateTime @default(now())
+  date_created DateTime @default(now())
   quizzes      Quiz[]
 
   rule         Rule           @relation(fields: [ruleId], references: [idRule])
@@ -242,7 +242,7 @@ model Quiz {
   audiofile    String?
   url_image    String?
   xp           Int
-  data_created DateTime     @default(now())
+  date_created DateTime     @default(now())
   quizTests    QuizTest[]
   userAnswer   UserAnswer[]
 
@@ -288,7 +288,7 @@ model StudyHistory {
   languageId     Int
   lessonId       Int
   score          BigInt
-  data_created   DateTime @default(now())
+  date_created   DateTime @default(now())
 
   user     User     @relation(fields: [userId], references: [idUser])
   language Language @relation(fields: [languageId], references: [idLanguage])
@@ -303,7 +303,7 @@ model Achievement {
   name          String
   url_image     String
   description   String
-  data_created  DateTime @default(now())
+  date_created  DateTime @default(now())
 
   user User @relation(fields: [userId], references: [idUser])
 }
@@ -398,6 +398,6 @@ model League {
   idLeague     Int            @id @default(autoincrement())
   name         String
   minXP        Int // Минимальное количество опыта для перехода на следующий уровень
-  data_created DateTime       @default(now())
+  date_created DateTime       @default(now())
   WeeklyRecord WeeklyRecord[]
 }
