@@ -6,6 +6,8 @@ export class ProfileEntity implements Profile {
   idProfile: number;
   @ApiProperty({ required: false })
   name: string;
+  @ApiProperty({ required: false })
   birthday: Date;
+  @ApiProperty({ required: false })
   userId: number;
 }
