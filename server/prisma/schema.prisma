@@ -195,7 +195,7 @@ model Comment {
 // Языки
 model Language {
   idLanguage   Int            @id @default(autoincrement())
-  language     String
+  language     String         @unique
   flagUrl      String?
   date_created DateTime       @default(now())
   module       Module[]

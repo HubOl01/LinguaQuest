@@ -5,11 +5,9 @@ import { PrismaService } from 'src/prisma/prisma.service';
 
 @Injectable()
 export class ModulesService {
-
   constructor(private prisma: PrismaService) {}
-
   create(createModuleDto: CreateModuleDto) {
-    return this.prisma.module.create({data: createModuleDto});
+    return this.prisma.module.create({ data: createModuleDto });
   }
 
   findAll() {
@@ -17,14 +15,14 @@ export class ModulesService {
   }
 
   findOne(id: number) {
-    return this.prisma.module.findUnique({ where: { idModule:id } });
+    return this.prisma.module.findUnique({ where: { idModule: id } });
   }
 
   update(id: number, updateModuleDto: UpdateModuleDto) {
     return this.prisma.module.update({
       where: { idModule: id },
       data: updateModuleDto,
-  });
+    });
   }
 
   remove(id: number) {
