@@ -8,9 +8,9 @@ export class PostEntity implements Post {
   title: string;
   @ApiProperty({ required: false })
   description: string;
-  @ApiProperty({ required: false })
+  @ApiProperty({ required: false, default: true })
   isDraft: boolean;
-  @ApiProperty({ required: false })
+  @ApiProperty({ required: false, default: '' })
   rejectionReason: string;
   @ApiProperty({ required: false })
   date_created: Date;
@@ -18,6 +18,6 @@ export class PostEntity implements Post {
   date_updated: Date;
   @ApiProperty({ required: false })
   userId: number;
-  @ApiProperty({ required: false })
+  @ApiProperty({ required: false, default: 3 })
   publicationStatusId: number;
 }

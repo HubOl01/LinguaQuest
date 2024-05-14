@@ -51,7 +51,7 @@ export class UpdateUserDto extends PartialType(CreateUserDto) {
   @IsNumber()
   xp: number;
 
-  @ApiProperty({ required: false })
-  @IsOptional()
-  date_created?: Date;
+  // @ApiProperty({ required: false })
+  // @IsOptional()
+  date_created: Date;
 }

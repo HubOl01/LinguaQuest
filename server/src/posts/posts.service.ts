@@ -8,22 +8,31 @@ export class PostsService {
   constructor(private prisma: PrismaService) {}
 
   create(createPostDto: CreatePostDto) {
-    return this.prisma.post.create({data: createPostDto});
+    return this.prisma.post.create({ data: createPostDto });
   }
 
   findAll() {
-    return `This action returns all posts`;
+    return this.prisma.post.findMany();
+  }
+  findOnlyPublication() {
+    return this.prisma.post.findMany({ where: { publicationStatusId: 1 } });
+  }
+  findOnlyModeration() {
+    return this.prisma.post.findMany({ where: { publicationStatusId: 3 } });
   }
 
   findOne(id: number) {
-    return `This action returns a #${id} post`;
+    return this.prisma.post.findUnique({ where: { idPost: id } });
   }
 
   update(id: number, updatePostDto: UpdatePostDto) {
-    return `This action updates a #${id} post`;
+    return this.prisma.post.update({
+      where: { idPost: id },
+      data: updatePostDto,
+    });
   }
 
   remove(id: number) {
-    return `This action removes a #${id} post`;
+    return this.prisma.post.delete({ where: { idPost: id } });
   }
 }
