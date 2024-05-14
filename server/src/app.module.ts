@@ -10,6 +10,10 @@ import { PhotosForPostModule } from './photos-for-post/photos-for-post.module';
 import { LikesModule } from './likes/likes.module';
 import { ViewsModule } from './views/views.module';
 import { CommentsModule } from './comments/comments.module';
+import { LanguagesModule } from './languages/languages.module';
+import { ModulesModule } from './modules/modules.module';
+import { LessonsModule } from './lessons/lessons.module';
+import { ModulesModule } from './modules/modules.module';
 
 @Module({
   imports: [
@@ -22,6 +26,9 @@ import { CommentsModule } from './comments/comments.module';
     LikesModule,
     ViewsModule,
     CommentsModule,
+    LanguagesModule, 
+    ModulesModule, 
+    LessonsModule
   ],
   controllers: [AppController],
   providers: [AppService],
