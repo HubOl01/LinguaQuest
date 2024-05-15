@@ -36,6 +36,7 @@ cached_network_image_web
 file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/cached_network_image_web-1.2.0/
 file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/cached_network_image_web-1.2.0/lib/
 =======
+<<<<<<< HEAD
 >>>>>>> 564eb98 (add libs)
 =======
 file:///home/foward01/.pub-cache/hosted/pub.dev/boolean_selector-2.1.1/
@@ -73,6 +74,9 @@ file:///home/foward01/.pub-cache/hosted/pub.dev/cached_network_image_web-1.2.0/l
 file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/cached_network_image_web-1.2.0/
 file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/cached_network_image_web-1.2.0/lib/
 >>>>>>> b19d6e9 (add post pages)
+=======
+>>>>>>> d55c951 (add libs)
+>>>>>>> 5746a1a (add libs)
 characters
 2.12
 file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/characters-1.3.0/
@@ -106,14 +110,18 @@ cupertino_icons
 file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/cupertino_icons-1.0.8/
 file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/cupertino_icons-1.0.8/lib/
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/cupertino_icons-1.0.8/
 file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/cupertino_icons-1.0.8/lib/
 >>>>>>> b19d6e9 (add post pages)
+=======
+>>>>>>> 5746a1a (add libs)
 easy_image_viewer
 2.19
 file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/easy_image_viewer-1.5.0/
 file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/easy_image_viewer-1.5.0/lib/
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 564eb98 (add libs)
@@ -131,6 +139,10 @@ file:///home/foward01/.pub-cache/hosted/pub.dev/cupertino_icons-1.0.8/lib/
 >>>>>>> 9154628 (add bottom and sliver appbar)
 =======
 >>>>>>> b19d6e9 (add post pages)
+=======
+=======
+>>>>>>> d55c951 (add libs)
+>>>>>>> 5746a1a (add libs)
 fake_async
 2.12
 file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/fake_async-1.3.1/
@@ -143,6 +155,7 @@ ffi
 <<<<<<< HEAD
 file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/ffi-2.1.2/
 file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/ffi-2.1.2/lib/
+<<<<<<< HEAD
 <<<<<<< HEAD
 file
 3.0
@@ -172,6 +185,8 @@ file:///home/foward01/.pub-cache/hosted/pub.dev/ffi-2.1.2/lib/
 file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/ffi-2.1.2/
 file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/ffi-2.1.2/lib/
 >>>>>>> b19d6e9 (add post pages)
+=======
+>>>>>>> 5746a1a (add libs)
 file
 3.0
 file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/file-7.0.0/
@@ -180,6 +195,8 @@ fixnum
 2.19
 file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/fixnum-1.1.0/
 file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/fixnum-1.1.0/lib/
+=======
+>>>>>>> d55c951 (add libs)
 flutter_bloc
 2.12
 <<<<<<< HEAD
@@ -212,11 +229,17 @@ file:///home/foward01/.pub-cache/hosted/pub.dev/flutter_cache_manager-3.3.2/lib/
 =======
 file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_bloc-8.1.5/
 file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_bloc-8.1.5/lib/
+<<<<<<< HEAD
 flutter_cache_manager
 2.17
 file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_cache_manager-3.3.2/
 file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_cache_manager-3.3.2/lib/
+<<<<<<< HEAD
 >>>>>>> b19d6e9 (add post pages)
+=======
+=======
+>>>>>>> d55c951 (add libs)
+>>>>>>> 5746a1a (add libs)
 flutter_keyboard_visibility
 2.12
 file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_keyboard_visibility-6.0.0/
@@ -254,14 +277,18 @@ flutter_lints
 file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_lints-3.0.2/
 file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_lints-3.0.2/lib/
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_lints-3.0.2/
 file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_lints-3.0.2/lib/
 >>>>>>> b19d6e9 (add post pages)
+=======
+>>>>>>> 5746a1a (add libs)
 fluttertoast
 2.12
 file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/fluttertoast-8.2.5/
 file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/fluttertoast-8.2.5/lib/
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 564eb98 (add libs)
@@ -279,6 +306,10 @@ file:///home/foward01/.pub-cache/hosted/pub.dev/flutter_lints-3.0.2/lib/
 >>>>>>> 9154628 (add bottom and sliver appbar)
 =======
 >>>>>>> b19d6e9 (add post pages)
+=======
+=======
+>>>>>>> d55c951 (add libs)
+>>>>>>> 5746a1a (add libs)
 get
 2.15
 file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/get-4.6.6/
@@ -301,6 +332,7 @@ http_parser
 file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/http_parser-4.0.2/
 file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/http_parser-4.0.2/lib/
 =======
+<<<<<<< HEAD
 >>>>>>> 564eb98 (add libs)
 =======
 file:///home/foward01/.pub-cache/hosted/pub.dev/hive-2.2.3/
@@ -334,6 +366,9 @@ file:///home/foward01/.pub-cache/hosted/pub.dev/http_parser-4.0.2/lib/
 file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/http_parser-4.0.2/
 file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/http_parser-4.0.2/lib/
 >>>>>>> b19d6e9 (add post pages)
+=======
+>>>>>>> d55c951 (add libs)
+>>>>>>> 5746a1a (add libs)
 image
 2.15
 file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/image-4.1.7/
@@ -345,6 +380,9 @@ file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/json_annotation-
 leak_tracker
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 5746a1a (add libs)
 3.2
 file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/leak_tracker-10.0.4/
 file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/leak_tracker-10.0.4/lib/
@@ -360,6 +398,7 @@ file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/leak_tracker_tes
 file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/leak_tracker_testing-3.0.1/lib/
 =======
 3.1
+<<<<<<< HEAD
 file:///home/foward01/.pub-cache/hosted/pub.dev/leak_tracker-10.0.0/
 file:///home/foward01/.pub-cache/hosted/pub.dev/leak_tracker-10.0.0/lib/
 =======
@@ -395,6 +434,19 @@ file:///home/foward01/.pub-cache/hosted/pub.dev/leak_tracker_testing-3.0.1/lib/
 file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/leak_tracker_testing-3.0.1/
 file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/leak_tracker_testing-3.0.1/lib/
 >>>>>>> b19d6e9 (add post pages)
+=======
+file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/leak_tracker-10.0.0/
+file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/leak_tracker-10.0.0/lib/
+leak_tracker_flutter_testing
+3.1
+file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/leak_tracker_flutter_testing-2.0.1/
+file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/leak_tracker_flutter_testing-2.0.1/lib/
+leak_tracker_testing
+3.1
+file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/leak_tracker_testing-2.0.1/
+file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/leak_tracker_testing-2.0.1/lib/
+>>>>>>> d55c951 (add libs)
+>>>>>>> 5746a1a (add libs)
 lints
 3.0
 file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/lints-3.0.0/
@@ -409,6 +461,7 @@ file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/material_color_u
 file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/material_color_utilities-0.8.0/lib/
 meta
 2.12
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -463,17 +516,29 @@ file:///home/foward01/.pub-cache/hosted/pub.dev/octo_image-2.0.0/
 file:///home/foward01/.pub-cache/hosted/pub.dev/octo_image-2.0.0/lib/
 >>>>>>> 3b2d46a (add Post)
 =======
+=======
+>>>>>>> 5746a1a (add libs)
 file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/meta-1.12.0/
 file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/meta-1.12.0/lib/
+=======
+file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/meta-1.11.0/
+file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/meta-1.11.0/lib/
+>>>>>>> d55c951 (add libs)
 nested
 2.12
 file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/nested-1.0.0/
 file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/nested-1.0.0/lib/
+<<<<<<< HEAD
 octo_image
 2.12
 file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/octo_image-2.0.0/
 file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/octo_image-2.0.0/lib/
+<<<<<<< HEAD
 >>>>>>> b19d6e9 (add post pages)
+=======
+=======
+>>>>>>> d55c951 (add libs)
+>>>>>>> 5746a1a (add libs)
 path
 3.0
 file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/path-1.9.0/
@@ -528,7 +593,11 @@ rxdart
 file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/rxdart-0.27.7/
 file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/rxdart-0.27.7/lib/
 =======
+<<<<<<< HEAD
 >>>>>>> 564eb98 (add libs)
+=======
+>>>>>>> d55c951 (add libs)
+>>>>>>> 5746a1a (add libs)
 source_span
 2.18
 file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/source_span-1.10.0/
@@ -547,6 +616,7 @@ sqflite_common
 file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/sqflite_common-2.5.4/
 file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/sqflite_common-2.5.4/lib/
 =======
+<<<<<<< HEAD
 >>>>>>> 564eb98 (add libs)
 =======
 file:///home/foward01/.pub-cache/hosted/pub.dev/provider-6.1.2/
@@ -605,6 +675,9 @@ file:///home/foward01/.pub-cache/hosted/pub.dev/sqflite_common-2.5.4/lib/
 file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/sqflite_common-2.5.4/
 file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/sqflite_common-2.5.4/lib/
 >>>>>>> b19d6e9 (add post pages)
+=======
+>>>>>>> d55c951 (add libs)
+>>>>>>> 5746a1a (add libs)
 stack_trace
 2.18
 file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/stack_trace-1.11.1/
@@ -650,17 +723,24 @@ file:///home/foward01/.pub-cache/hosted/pub.dev/synchronized-3.1.0+1/lib/
 =======
 file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/string_scanner-1.2.0/
 file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/string_scanner-1.2.0/lib/
+<<<<<<< HEAD
 synchronized
 3.0
 file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/synchronized-3.1.0+1/
 file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/synchronized-3.1.0+1/lib/
+<<<<<<< HEAD
 >>>>>>> b19d6e9 (add post pages)
+=======
+=======
+>>>>>>> d55c951 (add libs)
+>>>>>>> 5746a1a (add libs)
 term_glyph
 2.12
 file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/term_glyph-1.2.1/
 file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/term_glyph-1.2.1/lib/
 test_api
 3.0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -715,17 +795,29 @@ file:///home/foward01/.pub-cache/hosted/pub.dev/uuid-4.4.0/
 file:///home/foward01/.pub-cache/hosted/pub.dev/uuid-4.4.0/lib/
 >>>>>>> 3b2d46a (add Post)
 =======
+=======
+>>>>>>> 5746a1a (add libs)
 file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/test_api-0.7.0/
 file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/test_api-0.7.0/lib/
+=======
+file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/test_api-0.6.1/
+file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/test_api-0.6.1/lib/
+>>>>>>> d55c951 (add libs)
 typed_data
 2.17
 file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/typed_data-1.3.2/
 file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/typed_data-1.3.2/lib/
+<<<<<<< HEAD
 uuid
 3.0
 file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/uuid-4.4.0/
 file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/uuid-4.4.0/lib/
+<<<<<<< HEAD
 >>>>>>> b19d6e9 (add post pages)
+=======
+=======
+>>>>>>> d55c951 (add libs)
+>>>>>>> 5746a1a (add libs)
 vector_math
 2.14
 file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/vector_math-2.1.4/
@@ -733,6 +825,9 @@ file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/vector_math-2.1.
 vm_service
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 5746a1a (add libs)
 3.3
 file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/vm_service-14.2.1/
 file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/vm_service-14.2.1/lib/
@@ -746,6 +841,7 @@ file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/win32-5.5.1/
 file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/win32-5.5.1/lib/
 =======
 3.0
+<<<<<<< HEAD
 file:///home/foward01/.pub-cache/hosted/pub.dev/vm_service-13.0.0/
 file:///home/foward01/.pub-cache/hosted/pub.dev/vm_service-13.0.0/lib/
 win32
@@ -781,6 +877,15 @@ file:///home/foward01/.pub-cache/hosted/pub.dev/win32-5.5.1/lib/
 file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/win32-5.5.1/
 file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/win32-5.5.1/lib/
 >>>>>>> b19d6e9 (add post pages)
+=======
+file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/vm_service-13.0.0/
+file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/vm_service-13.0.0/lib/
+win32
+3.3
+file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/win32-5.5.0/
+file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/win32-5.5.0/lib/
+>>>>>>> d55c951 (add libs)
+>>>>>>> 5746a1a (add libs)
 xdg_directories
 3.0
 file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/xdg_directories-1.0.4/
@@ -800,6 +905,7 @@ sky_engine
 file:///C:/dev/flutter/bin/cache/pkg/sky_engine/
 file:///C:/dev/flutter/bin/cache/pkg/sky_engine/lib/
 flutter
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 3.3
@@ -876,7 +982,12 @@ sky_engine
 file:///C:/dev/flutter/bin/cache/pkg/sky_engine/
 file:///C:/dev/flutter/bin/cache/pkg/sky_engine/lib/
 flutter
+=======
+>>>>>>> 5746a1a (add libs)
 3.3
+=======
+3.2
+>>>>>>> d55c951 (add libs)
 file:///C:/dev/flutter/packages/flutter/
 file:///C:/dev/flutter/packages/flutter/lib/
 flutter_test
@@ -886,13 +997,25 @@ file:///C:/dev/flutter/packages/flutter_test/lib/
 flutter_web_plugins
 3.2
 <<<<<<< HEAD
+<<<<<<< HEAD
 file:///home/foward01/snap/flutter/common/flutter/packages/flutter_web_plugins/
 file:///home/foward01/snap/flutter/common/flutter/packages/flutter_web_plugins/lib/
 >>>>>>> 9154628 (add bottom and sliver appbar)
 =======
+=======
+>>>>>>> 5746a1a (add libs)
 file:///C:/dev/flutter/packages/flutter_web_plugins/
 file:///C:/dev/flutter/packages/flutter_web_plugins/lib/
 LinguaQuest
+=======
+file:///C:/dev/flutter/packages/flutter_test/
+file:///C:/dev/flutter/packages/flutter_test/lib/
+flutter_web_plugins
+3.2
+file:///C:/dev/flutter/packages/flutter_web_plugins/
+file:///C:/dev/flutter/packages/flutter_web_plugins/lib/
+mobile
+>>>>>>> d55c951 (add libs)
 3.3
 file:///D:/Projects/LinguaQuest/mobile/
 file:///D:/Projects/LinguaQuest/mobile/lib/
