@@ -145,6 +145,7 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.1.2"
+<<<<<<< HEAD
   file:
     dependency: transitive
     description:
@@ -161,6 +162,8 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.1.0"
+=======
+>>>>>>> d55c951 (add libs)
   flutter:
     dependency: "direct main"
     description: flutter
@@ -174,6 +177,7 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "8.1.5"
+<<<<<<< HEAD
   flutter_cache_manager:
     dependency: transitive
     description:
@@ -182,6 +186,8 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.3.2"
+=======
+>>>>>>> d55c951 (add libs)
   flutter_keyboard_visibility:
     dependency: "direct main"
     description:
@@ -256,6 +262,7 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+<<<<<<< HEAD
   fluttertoast:
     dependency: "direct main"
     description:
@@ -264,6 +271,8 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "8.2.5"
+=======
+>>>>>>> d55c951 (add libs)
   get:
     dependency: "direct main"
     description:
@@ -280,6 +289,7 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.2.3"
+<<<<<<< HEAD
   http:
     dependency: transitive
     description:
@@ -296,6 +306,8 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "4.0.2"
+=======
+>>>>>>> d55c951 (add libs)
   image:
     dependency: transitive
     description:
@@ -367,7 +379,11 @@ packages:
       sha256: "7687075e408b093f36e6bbf6c91878cc0d4cd10f409506f7bc996f68220b9136"
       url: "https://pub.dev"
     source: hosted
+<<<<<<< HEAD
     version: "1.12.0"
+=======
+    version: "1.11.0"
+>>>>>>> d55c951 (add libs)
   nested:
     dependency: transitive
     description:
@@ -376,6 +392,7 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.0.0"
+<<<<<<< HEAD
   octo_image:
     dependency: transitive
     description:
@@ -384,6 +401,8 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.0.0"
+=======
+>>>>>>> d55c951 (add libs)
   path:
     dependency: transitive
     description:
@@ -472,6 +491,7 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "6.1.2"
+<<<<<<< HEAD
   rxdart:
     dependency: transitive
     description:
@@ -480,6 +500,8 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.27.7"
+=======
+>>>>>>> d55c951 (add libs)
   sky_engine:
     dependency: transitive
     description: flutter
@@ -564,7 +586,11 @@ packages:
       sha256: "9955ae474176f7ac8ee4e989dadfb411a58c30415bcfb648fa04b2b8a03afa7f"
       url: "https://pub.dev"
     source: hosted
+<<<<<<< HEAD
     version: "0.7.0"
+=======
+    version: "0.6.1"
+>>>>>>> d55c951 (add libs)
   typed_data:
     dependency: transitive
     description:
@@ -573,6 +599,7 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.3.2"
+<<<<<<< HEAD
   uuid:
     dependency: transitive
     description:
@@ -581,6 +608,8 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "4.4.0"
+=======
+>>>>>>> d55c951 (add libs)
   vector_math:
     dependency: transitive
     description:
@@ -596,6 +625,7 @@ packages:
       sha256: "3923c89304b715fb1eb6423f017651664a03bf5f4b29983627c4da791f74a4ec"
       url: "https://pub.dev"
     source: hosted
+<<<<<<< HEAD
     version: "14.2.1"
   web:
     dependency: transitive
@@ -605,14 +635,24 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.5.1"
+=======
+    version: "13.0.0"
+>>>>>>> d55c951 (add libs)
   win32:
     dependency: transitive
     description:
       name: win32
+<<<<<<< HEAD
       sha256: a79dbe579cb51ecd6d30b17e0cae4e0ea15e2c0e66f69ad4198f22a6789e94f4
       url: "https://pub.dev"
     source: hosted
     version: "5.5.1"
+=======
+      sha256: "0eaf06e3446824099858367950a813472af675116bf63f008a4c2a75ae13e9cb"
+      url: "https://pub.dev"
+    source: hosted
+    version: "5.5.0"
+>>>>>>> d55c951 (add libs)
   xdg_directories:
     dependency: transitive
     description:
@@ -638,5 +678,10 @@ packages:
     source: hosted
     version: "3.1.2"
 sdks:
+<<<<<<< HEAD
   dart: ">=3.4.0 <4.0.0"
   flutter: ">=3.18.0-18.0.pre.54"
+=======
+  dart: ">=3.3.4 <4.0.0"
+  flutter: ">=3.16.6"
+>>>>>>> d55c951 (add libs)
