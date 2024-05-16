@@ -12,9 +12,8 @@ import { ViewsModule } from './views/views.module';
 import { CommentsModule } from './comments/comments.module';
 import { LanguagesModule } from './languages/languages.module';
 import { ModulesModule } from './modules/modules.module';
-import { QuizsModule } from './quizs/quizs.module';
 import { LessonsModule } from './lessons/lessons.module';
-
+import { ModulesModule } from './modules/modules.module';
 
 @Module({
   imports: [
@@ -29,7 +28,7 @@ import { LessonsModule } from './lessons/lessons.module';
     CommentsModule,
     LanguagesModule, 
     ModulesModule, 
-    LessonsModule, QuizsModule
+    LessonsModule
   ],
   controllers: [AppController],
   providers: [AppService],
