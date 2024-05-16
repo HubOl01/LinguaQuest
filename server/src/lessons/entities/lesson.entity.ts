@@ -8,9 +8,9 @@ export class LessonEntity implements Lesson{
   moduleId:number;
   @ApiProperty()
   title:string;
-  @ApiProperty()//Без описания неясен смысл задания
-  description:string;
   @ApiProperty()
+  description:string;
+  @ApiProperty()//Без описания неясен смысл задания
   ruleId:number;
   @ApiProperty({ required: false })
   date_created:Date;
