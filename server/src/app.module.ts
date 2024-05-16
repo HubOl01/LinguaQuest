@@ -13,7 +13,6 @@ import { CommentsModule } from './comments/comments.module';
 import { LanguagesModule } from './languages/languages.module';
 import { ModulesModule } from './modules/modules.module';
 
-import { QuizsModule } from './quizs/quizs.module';
 import { LessonsModule } from './lessons/lessons.module';
 import { QuizTypesModule } from './quiz-types/quiz-types.module';
 import { QuizTestsModule } from './quiz-tests/quiz-tests.module';
@@ -25,6 +24,8 @@ import { DictionariesModule } from './dictionaries/dictionaries.module';
 import { CardwordsModule } from './cardwords/cardwords.module';
 import { GlobaldictionariesModule } from './globaldictionaries/globaldictionaries.module';
 import { BookmarksModule } from './bookmarks/bookmarks.module';
+
+
 
 @Module({
   imports: [
@@ -47,14 +48,13 @@ import { BookmarksModule } from './bookmarks/bookmarks.module';
     GlobaldictionariesModule,
     BookmarksModule,
     LessonsModule,
-    QuizsModule,
-    QuizsModule,
-
-    QuizsModule,
     QuizTypesModule,
     QuizTestsModule,
     UserAnswersModule,
     StudyHistorysModule,
+    LanguagesModule, 
+    ModulesModule, 
+    LessonsModule
   ],
   controllers: [AppController],
   providers: [AppService],
