@@ -68,12 +68,12 @@ export class UpdateQuizDto extends PartialType(CreateQuizDto) {
   @ApiProperty()
   @IsNumber()
   @IsNotEmpty()
-  question:number;
+  question:string;
 
   @ApiProperty()
   @IsNumber()
   @IsNotEmpty()
-  answer:number;
+  answer:string;
 
   @ApiProperty()
   @IsString()
