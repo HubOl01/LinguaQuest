@@ -1,45 +1,45 @@
 import { ApiProperty } from "@nestjs/swagger";
 import { IsNotEmpty, IsNumber, IsString } from "class-validator";
 
-export class CreateQuizDto {          
+export class CreateQuizDto {
   @ApiProperty()
   @IsNumber()
   @IsNotEmpty()
-  lessonId:number;
+  lessonId: number;
 
   @ApiProperty()
   @IsNumber()
   @IsNotEmpty()
-  QuizTypeId:number;
+  QuizTypeId: number;
 
   @ApiProperty()
   @IsNumber()
   @IsNotEmpty()
-  question:number;
+  question: string;
 
   @ApiProperty()
   @IsNumber()
   @IsNotEmpty()
-  answer:number;
+  answer: string;
 
   @ApiProperty()
   @IsString()
   @IsNotEmpty()
-  explanation:string;
+  explanation: string;
 
   @ApiProperty({ required: false })
   @IsString()
-  audiofile?:string;
+  audiofile?: string;
 
   @ApiProperty({ required: false })
   @IsString()
-  url_image?:string
+  url_image?: string;
 
   @ApiProperty()
   @IsNumber()
   @IsNotEmpty()
-  xp:number;
-  
+  xp: number;
+
   @ApiProperty({ required: false })
-  date_created?:Date;
+  date_created?: Date;
 }
