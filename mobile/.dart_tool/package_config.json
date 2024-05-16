@@ -3,24 +3,25 @@
   "packages": [
     {
       "name": "archive",
-      "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/archive-3.5.1",
+      "rootUri": "file:///home/foward01/.pub-cache/hosted/pub.dev/archive-3.5.1",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
     {
       "name": "args",
-      "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/args-2.5.0",
+      "rootUri": "file:///home/foward01/.pub-cache/hosted/pub.dev/args-2.5.0",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
     {
       "name": "async",
-      "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/async-2.11.0",
+      "rootUri": "file:///home/foward01/.pub-cache/hosted/pub.dev/async-2.11.0",
       "packageUri": "lib/",
       "languageVersion": "2.18"
     },
     {
       "name": "bloc",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -43,19 +44,31 @@
 >>>>>>> b19d6e9 (add post pages)
 =======
 >>>>>>> 5746a1a (add libs)
+=======
+      "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/bloc-8.1.4",
+<<<<<<< HEAD
+=======
+=======
+      "rootUri": "file:///home/foward01/.pub-cache/hosted/pub.dev/bloc-8.1.4",
+>>>>>>> 896fa53 (add pages)
+>>>>>>> 457465b (add pages)
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
       "name": "boolean_selector",
-      "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/boolean_selector-2.1.1",
+      "rootUri": "file:///home/foward01/.pub-cache/hosted/pub.dev/boolean_selector-2.1.1",
       "packageUri": "lib/",
       "languageVersion": "2.17"
     },
     {
       "name": "characters",
+<<<<<<< HEAD
       "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/characters-1.3.0",
 >>>>>>> d55c951 (add libs)
+=======
+      "rootUri": "file:///home/foward01/.pub-cache/hosted/pub.dev/characters-1.3.0",
+>>>>>>> 896fa53 (add pages)
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -147,37 +160,37 @@
 >>>>>>> d55c951 (add libs)
 >>>>>>> 5746a1a (add libs)
       "name": "checked_yaml",
-      "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/checked_yaml-2.0.3",
+      "rootUri": "file:///home/foward01/.pub-cache/hosted/pub.dev/checked_yaml-2.0.3",
       "packageUri": "lib/",
       "languageVersion": "2.19"
     },
     {
       "name": "cli_util",
-      "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/cli_util-0.4.1",
+      "rootUri": "file:///home/foward01/.pub-cache/hosted/pub.dev/cli_util-0.4.1",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
     {
       "name": "clock",
-      "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/clock-1.1.1",
+      "rootUri": "file:///home/foward01/.pub-cache/hosted/pub.dev/clock-1.1.1",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
       "name": "collection",
-      "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/collection-1.18.0",
+      "rootUri": "file:///home/foward01/.pub-cache/hosted/pub.dev/collection-1.18.0",
       "packageUri": "lib/",
       "languageVersion": "2.18"
     },
     {
       "name": "crypto",
-      "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/crypto-3.0.3",
+      "rootUri": "file:///home/foward01/.pub-cache/hosted/pub.dev/crypto-3.0.3",
       "packageUri": "lib/",
       "languageVersion": "2.19"
     },
     {
       "name": "cupertino_icons",
-      "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/cupertino_icons-1.0.8",
+      "rootUri": "file:///home/foward01/.pub-cache/hosted/pub.dev/cupertino_icons-1.0.8",
       "packageUri": "lib/",
       "languageVersion": "3.1"
     },
@@ -189,12 +202,13 @@
     },
     {
       "name": "fake_async",
-      "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/fake_async-1.3.1",
+      "rootUri": "file:///home/foward01/.pub-cache/hosted/pub.dev/fake_async-1.3.1",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
       "name": "ffi",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -217,6 +231,14 @@
 >>>>>>> b19d6e9 (add post pages)
 =======
 >>>>>>> 5746a1a (add libs)
+=======
+      "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/ffi-2.1.2",
+<<<<<<< HEAD
+=======
+=======
+      "rootUri": "file:///home/foward01/.pub-cache/hosted/pub.dev/ffi-2.1.2",
+>>>>>>> 896fa53 (add pages)
+>>>>>>> 457465b (add pages)
       "packageUri": "lib/",
       "languageVersion": "3.3"
     },
@@ -246,9 +268,16 @@
 >>>>>>> 6bd924e (add pages)
 =======
       "name": "flutter",
+<<<<<<< HEAD
       "rootUri": "file:///C:/dev/flutter/packages/flutter",
 >>>>>>> d55c951 (add libs)
+<<<<<<< HEAD
 >>>>>>> 5746a1a (add libs)
+=======
+=======
+      "rootUri": "file:///home/foward01/snap/flutter/common/flutter/packages/flutter",
+>>>>>>> 896fa53 (add pages)
+>>>>>>> 457465b (add pages)
       "packageUri": "lib/",
       "languageVersion": "3.3"
     },
@@ -396,55 +425,55 @@
     },
     {
       "name": "flutter_bloc",
-      "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_bloc-8.1.5",
+      "rootUri": "file:///home/foward01/.pub-cache/hosted/pub.dev/flutter_bloc-8.1.5",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
       "name": "flutter_keyboard_visibility",
-      "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_keyboard_visibility-6.0.0",
+      "rootUri": "file:///home/foward01/.pub-cache/hosted/pub.dev/flutter_keyboard_visibility-6.0.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
       "name": "flutter_keyboard_visibility_linux",
-      "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_keyboard_visibility_linux-1.0.0",
+      "rootUri": "file:///home/foward01/.pub-cache/hosted/pub.dev/flutter_keyboard_visibility_linux-1.0.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
       "name": "flutter_keyboard_visibility_macos",
-      "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_keyboard_visibility_macos-1.0.0",
+      "rootUri": "file:///home/foward01/.pub-cache/hosted/pub.dev/flutter_keyboard_visibility_macos-1.0.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
       "name": "flutter_keyboard_visibility_platform_interface",
-      "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_keyboard_visibility_platform_interface-2.0.0",
+      "rootUri": "file:///home/foward01/.pub-cache/hosted/pub.dev/flutter_keyboard_visibility_platform_interface-2.0.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
       "name": "flutter_keyboard_visibility_web",
-      "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_keyboard_visibility_web-2.0.0",
+      "rootUri": "file:///home/foward01/.pub-cache/hosted/pub.dev/flutter_keyboard_visibility_web-2.0.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
       "name": "flutter_keyboard_visibility_windows",
-      "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_keyboard_visibility_windows-1.0.0",
+      "rootUri": "file:///home/foward01/.pub-cache/hosted/pub.dev/flutter_keyboard_visibility_windows-1.0.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
       "name": "flutter_launcher_icons",
-      "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_launcher_icons-0.13.1",
+      "rootUri": "file:///home/foward01/.pub-cache/hosted/pub.dev/flutter_launcher_icons-0.13.1",
       "packageUri": "lib/",
       "languageVersion": "2.18"
     },
     {
       "name": "flutter_lints",
-      "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_lints-3.0.2",
+      "rootUri": "file:///home/foward01/.pub-cache/hosted/pub.dev/flutter_lints-3.0.2",
       "packageUri": "lib/",
       "languageVersion": "3.1"
     },
@@ -454,6 +483,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 457465b (add pages)
       "rootUri": "file:///C:/dev/flutter/packages/flutter_test",
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -500,7 +532,13 @@
 >>>>>>> b19d6e9 (add post pages)
 =======
 >>>>>>> d55c951 (add libs)
+<<<<<<< HEAD
 >>>>>>> 5746a1a (add libs)
+=======
+=======
+      "rootUri": "file:///home/foward01/snap/flutter/common/flutter/packages/flutter_test",
+>>>>>>> 896fa53 (add pages)
+>>>>>>> 457465b (add pages)
       "packageUri": "lib/",
       "languageVersion": "3.2"
     },
@@ -510,38 +548,42 @@
       "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/fluttertoast-8.2.5",
 =======
       "name": "flutter_web_plugins",
-      "rootUri": "file:///C:/dev/flutter/packages/flutter_web_plugins",
+      "rootUri": "file:///home/foward01/snap/flutter/common/flutter/packages/flutter_web_plugins",
       "packageUri": "lib/",
       "languageVersion": "3.2"
     },
     {
       "name": "get",
-      "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/get-4.6.6",
+      "rootUri": "file:///home/foward01/.pub-cache/hosted/pub.dev/get-4.6.6",
       "packageUri": "lib/",
       "languageVersion": "2.15"
     },
     {
       "name": "hive",
-      "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/hive-2.2.3",
+      "rootUri": "file:///home/foward01/.pub-cache/hosted/pub.dev/hive-2.2.3",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
       "name": "image",
-      "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/image-4.1.7",
+      "rootUri": "file:///home/foward01/.pub-cache/hosted/pub.dev/image-4.1.7",
       "packageUri": "lib/",
       "languageVersion": "2.15"
     },
     {
       "name": "json_annotation",
-      "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/json_annotation-4.9.0",
+      "rootUri": "file:///home/foward01/.pub-cache/hosted/pub.dev/json_annotation-4.9.0",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
     {
       "name": "leak_tracker",
+<<<<<<< HEAD
       "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/leak_tracker-10.0.0",
 >>>>>>> d55c951 (add libs)
+=======
+      "rootUri": "file:///home/foward01/.pub-cache/hosted/pub.dev/leak_tracker-10.0.0",
+>>>>>>> 896fa53 (add pages)
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -655,6 +697,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/leak_tracker_flutter_testing-3.0.3",
 =======
       "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/leak_tracker_flutter_testing-2.0.1",
@@ -672,16 +715,25 @@
       "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/leak_tracker_flutter_testing-3.0.3",
 >>>>>>> b19d6e9 (add post pages)
 =======
+=======
+>>>>>>> 457465b (add pages)
       "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/leak_tracker_flutter_testing-3.0.3",
 =======
       "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/leak_tracker_flutter_testing-2.0.1",
 >>>>>>> d55c951 (add libs)
+<<<<<<< HEAD
 >>>>>>> 5746a1a (add libs)
+=======
+=======
+      "rootUri": "file:///home/foward01/.pub-cache/hosted/pub.dev/leak_tracker_flutter_testing-2.0.1",
+>>>>>>> 896fa53 (add pages)
+>>>>>>> 457465b (add pages)
       "packageUri": "lib/",
       "languageVersion": "3.2"
     },
     {
       "name": "leak_tracker_testing",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -705,34 +757,43 @@
       "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/leak_tracker_testing-3.0.1",
 >>>>>>> b19d6e9 (add post pages)
 =======
+=======
+>>>>>>> 457465b (add pages)
       "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/leak_tracker_testing-3.0.1",
 =======
       "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/leak_tracker_testing-2.0.1",
 >>>>>>> d55c951 (add libs)
+<<<<<<< HEAD
 >>>>>>> 5746a1a (add libs)
+=======
+=======
+      "rootUri": "file:///home/foward01/.pub-cache/hosted/pub.dev/leak_tracker_testing-2.0.1",
+>>>>>>> 896fa53 (add pages)
+>>>>>>> 457465b (add pages)
       "packageUri": "lib/",
       "languageVersion": "3.2"
     },
     {
       "name": "lints",
-      "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/lints-3.0.0",
+      "rootUri": "file:///home/foward01/.pub-cache/hosted/pub.dev/lints-3.0.0",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
     {
       "name": "matcher",
-      "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/matcher-0.12.16+1",
+      "rootUri": "file:///home/foward01/.pub-cache/hosted/pub.dev/matcher-0.12.16+1",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
     {
       "name": "material_color_utilities",
-      "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/material_color_utilities-0.8.0",
+      "rootUri": "file:///home/foward01/.pub-cache/hosted/pub.dev/material_color_utilities-0.8.0",
       "packageUri": "lib/",
       "languageVersion": "2.17"
     },
     {
       "name": "meta",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -756,11 +817,19 @@
       "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/meta-1.12.0",
 >>>>>>> b19d6e9 (add post pages)
 =======
+=======
+>>>>>>> 457465b (add pages)
       "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/meta-1.12.0",
 =======
       "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/meta-1.11.0",
 >>>>>>> d55c951 (add libs)
+<<<<<<< HEAD
 >>>>>>> 5746a1a (add libs)
+=======
+=======
+      "rootUri": "file:///home/foward01/.pub-cache/hosted/pub.dev/meta-1.11.0",
+>>>>>>> 896fa53 (add pages)
+>>>>>>> 457465b (add pages)
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -770,6 +839,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 457465b (add pages)
       "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/nested-1.0.0",
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -803,72 +875,75 @@
       "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/octo_image-2.0.0",
 =======
 >>>>>>> d55c951 (add libs)
+=======
+      "rootUri": "file:///home/foward01/.pub-cache/hosted/pub.dev/nested-1.0.0",
+>>>>>>> 896fa53 (add pages)
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
       "name": "path",
-      "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/path-1.9.0",
+      "rootUri": "file:///home/foward01/.pub-cache/hosted/pub.dev/path-1.9.0",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
     {
       "name": "path_provider",
-      "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/path_provider-2.1.3",
+      "rootUri": "file:///home/foward01/.pub-cache/hosted/pub.dev/path_provider-2.1.3",
       "packageUri": "lib/",
       "languageVersion": "3.1"
     },
     {
       "name": "path_provider_android",
-      "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/path_provider_android-2.2.4",
+      "rootUri": "file:///home/foward01/.pub-cache/hosted/pub.dev/path_provider_android-2.2.4",
       "packageUri": "lib/",
       "languageVersion": "3.2"
     },
     {
       "name": "path_provider_foundation",
-      "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/path_provider_foundation-2.4.0",
+      "rootUri": "file:///home/foward01/.pub-cache/hosted/pub.dev/path_provider_foundation-2.4.0",
       "packageUri": "lib/",
       "languageVersion": "3.2"
     },
     {
       "name": "path_provider_linux",
-      "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/path_provider_linux-2.2.1",
+      "rootUri": "file:///home/foward01/.pub-cache/hosted/pub.dev/path_provider_linux-2.2.1",
       "packageUri": "lib/",
       "languageVersion": "2.19"
     },
     {
       "name": "path_provider_platform_interface",
-      "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/path_provider_platform_interface-2.1.2",
+      "rootUri": "file:///home/foward01/.pub-cache/hosted/pub.dev/path_provider_platform_interface-2.1.2",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
     {
       "name": "path_provider_windows",
-      "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/path_provider_windows-2.2.1",
+      "rootUri": "file:///home/foward01/.pub-cache/hosted/pub.dev/path_provider_windows-2.2.1",
       "packageUri": "lib/",
       "languageVersion": "2.19"
     },
     {
       "name": "petitparser",
-      "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/petitparser-6.0.2",
+      "rootUri": "file:///home/foward01/.pub-cache/hosted/pub.dev/petitparser-6.0.2",
       "packageUri": "lib/",
       "languageVersion": "3.2"
     },
     {
       "name": "platform",
-      "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/platform-3.1.4",
+      "rootUri": "file:///home/foward01/.pub-cache/hosted/pub.dev/platform-3.1.4",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
     {
       "name": "plugin_platform_interface",
-      "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/plugin_platform_interface-2.1.8",
+      "rootUri": "file:///home/foward01/.pub-cache/hosted/pub.dev/plugin_platform_interface-2.1.8",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
     {
       "name": "provider",
-      "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/provider-6.1.2",
+      "rootUri": "file:///home/foward01/.pub-cache/hosted/pub.dev/provider-6.1.2",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -903,13 +978,13 @@
 >>>>>>> d55c951 (add libs)
 >>>>>>> 5746a1a (add libs)
       "name": "sky_engine",
-      "rootUri": "file:///C:/dev/flutter/bin/cache/pkg/sky_engine",
+      "rootUri": "file:///home/foward01/snap/flutter/common/flutter/bin/cache/pkg/sky_engine",
       "packageUri": "lib/",
       "languageVersion": "3.2"
     },
     {
       "name": "source_span",
-      "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/source_span-1.10.0",
+      "rootUri": "file:///home/foward01/.pub-cache/hosted/pub.dev/source_span-1.10.0",
       "packageUri": "lib/",
       "languageVersion": "2.18"
     },
@@ -957,19 +1032,19 @@
     },
     {
       "name": "stack_trace",
-      "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/stack_trace-1.11.1",
+      "rootUri": "file:///home/foward01/.pub-cache/hosted/pub.dev/stack_trace-1.11.1",
       "packageUri": "lib/",
       "languageVersion": "2.18"
     },
     {
       "name": "stream_channel",
-      "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/stream_channel-2.1.2",
+      "rootUri": "file:///home/foward01/.pub-cache/hosted/pub.dev/stream_channel-2.1.2",
       "packageUri": "lib/",
       "languageVersion": "2.19"
     },
     {
       "name": "string_scanner",
-      "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/string_scanner-1.2.0",
+      "rootUri": "file:///home/foward01/.pub-cache/hosted/pub.dev/string_scanner-1.2.0",
       "packageUri": "lib/",
       "languageVersion": "2.18"
     },
@@ -989,7 +1064,7 @@
     },
     {
       "name": "term_glyph",
-      "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/term_glyph-1.2.1",
+      "rootUri": "file:///home/foward01/.pub-cache/hosted/pub.dev/term_glyph-1.2.1",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -1001,8 +1076,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 5746a1a (add libs)
+=======
+>>>>>>> 457465b (add pages)
       "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/test_api-0.7.0",
 =======
       "rootUri": "file:///home/foward01/.pub-cache/hosted/pub.dev/test_api-0.7.0",
@@ -1042,7 +1120,13 @@
 >>>>>>> b19d6e9 (add post pages)
 =======
 >>>>>>> d55c951 (add libs)
+<<<<<<< HEAD
 >>>>>>> 5746a1a (add libs)
+=======
+=======
+      "rootUri": "file:///home/foward01/.pub-cache/hosted/pub.dev/test_api-0.6.1",
+>>>>>>> 896fa53 (add pages)
+>>>>>>> 457465b (add pages)
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
@@ -1052,7 +1136,7 @@
 =======
 >>>>>>> 5746a1a (add libs)
       "name": "typed_data",
-      "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/typed_data-1.3.2",
+      "rootUri": "file:///home/foward01/.pub-cache/hosted/pub.dev/typed_data-1.3.2",
       "packageUri": "lib/",
       "languageVersion": "2.17"
     },
@@ -1063,7 +1147,7 @@
 =======
 >>>>>>> 5746a1a (add libs)
       "name": "vector_math",
-      "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/vector_math-2.1.4",
+      "rootUri": "file:///home/foward01/.pub-cache/hosted/pub.dev/vector_math-2.1.4",
       "packageUri": "lib/",
       "languageVersion": "2.14"
     },
@@ -1075,8 +1159,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 5746a1a (add libs)
+=======
+>>>>>>> 457465b (add pages)
       "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/vm_service-14.2.1",
 =======
       "rootUri": "file:///home/foward01/.pub-cache/hosted/pub.dev/vm_service-14.2.1",
@@ -1140,6 +1227,9 @@
 =======
       "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/vm_service-13.0.0",
 >>>>>>> d55c951 (add libs)
+=======
+      "rootUri": "file:///home/foward01/.pub-cache/hosted/pub.dev/vm_service-13.0.0",
+>>>>>>> 896fa53 (add pages)
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
@@ -1150,13 +1240,13 @@
 <<<<<<< HEAD
 =======
       "name": "win32",
-      "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/win32-5.5.0",
+      "rootUri": "file:///home/foward01/.pub-cache/hosted/pub.dev/win32-5.5.0",
       "packageUri": "lib/",
       "languageVersion": "3.3"
     },
     {
       "name": "xdg_directories",
-      "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/xdg_directories-1.0.4",
+      "rootUri": "file:///home/foward01/.pub-cache/hosted/pub.dev/xdg_directories-1.0.4",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
@@ -1164,17 +1254,18 @@
 >>>>>>> d55c951 (add libs)
 >>>>>>> 5746a1a (add libs)
       "name": "xml",
-      "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/xml-6.5.0",
+      "rootUri": "file:///home/foward01/.pub-cache/hosted/pub.dev/xml-6.5.0",
       "packageUri": "lib/",
       "languageVersion": "3.2"
     },
     {
       "name": "yaml",
-      "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/yaml-3.1.2",
+      "rootUri": "file:///home/foward01/.pub-cache/hosted/pub.dev/yaml-3.1.2",
       "packageUri": "lib/",
       "languageVersion": "2.19"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1186,16 +1277,25 @@
       "name": "LinguaQuest",
 >>>>>>> 6bd924e (add pages)
 =======
+=======
+>>>>>>> 457465b (add pages)
       "name": "LinguaQuest",
 =======
       "name": "mobile",
 >>>>>>> d55c951 (add libs)
+<<<<<<< HEAD
 >>>>>>> 5746a1a (add libs)
+=======
+=======
+      "name": "LinguaQuest",
+>>>>>>> 896fa53 (add pages)
+>>>>>>> 457465b (add pages)
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "3.3"
     }
   ],
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1223,11 +1323,19 @@
   "generated": "2024-05-19T21:43:24.119678Z",
 >>>>>>> b19d6e9 (add post pages)
 =======
+=======
+>>>>>>> 457465b (add pages)
   "generated": "2024-05-19T21:43:24.119678Z",
 =======
   "generated": "2024-05-15T08:17:59.966126Z",
 >>>>>>> d55c951 (add libs)
+<<<<<<< HEAD
 >>>>>>> 5746a1a (add libs)
+=======
+=======
+  "generated": "2024-05-16T15:33:57.350375Z",
+>>>>>>> 896fa53 (add pages)
+>>>>>>> 457465b (add pages)
   "generator": "pub",
   "generatorVersion": "3.4.0",
   "flutterRoot": "file:///C:/dev/flutter",
