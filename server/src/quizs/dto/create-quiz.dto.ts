@@ -63,12 +63,12 @@ export class CreateQuizDto {
   @ApiProperty()
   @IsNumber()
   @IsNotEmpty()
-  question:number;
+  question:string;
 
   @ApiProperty()
   @IsNumber()
   @IsNotEmpty()
-  answer:number;
+  answer:string;
 
   @ApiProperty()
   @IsString()
