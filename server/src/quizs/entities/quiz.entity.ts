@@ -8,9 +8,9 @@ export class Quiz {
   @ApiProperty()
   QuizTypeId:number;
   @ApiProperty()
-  question:number;
+  question:string;
   @ApiProperty()
-  answer:number;
+  answer:string;
   @ApiProperty()
   explanation:string;
   @ApiProperty({ required: false })
