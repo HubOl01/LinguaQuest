@@ -21,4 +21,4 @@ export class Quiz {
   xp:number;
   @ApiProperty()
   date_created:Date;
-}
+}export class Quiz {}

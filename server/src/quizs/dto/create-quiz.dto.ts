@@ -43,3 +43,4 @@ export class CreateQuizDto {
   @ApiProperty({ required: false })
   date_created?: Date;
 }
+export class CreateQuizDto {}
