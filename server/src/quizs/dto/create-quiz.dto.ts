@@ -46,3 +46,4 @@ export class CreateQuizDto {
   date_created?: Date;
 
 }
+export class CreateQuizDto {}

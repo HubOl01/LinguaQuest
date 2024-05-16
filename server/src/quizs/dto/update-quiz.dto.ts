@@ -47,3 +47,7 @@ export class UpdateQuizDto extends PartialType(CreateQuizDto) {
   @ApiProperty({ required: false })
   date_created?: Date;
 }
+import { PartialType } from '@nestjs/swagger';
+import { CreateQuizDto } from './create-quiz.dto';
+
+export class UpdateQuizDto extends PartialType(CreateQuizDto) {}
