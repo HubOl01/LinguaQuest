@@ -12,6 +12,11 @@ import { ViewsModule } from './views/views.module';
 import { CommentsModule } from './comments/comments.module';
 import { LanguagesModule } from './languages/languages.module';
 import { ModulesModule } from './modules/modules.module';
+import { QuizsModule } from './quizs/quizs.module';
+import { QuizModule } from './quiz/quiz.module';
+import { QuizModule } from './quiz/quiz.module';
+import { QuizsModule } from './quizs/quizs.module';
+import { QuizesModule } from './quizes/quizes.module';
 import { LessonsModule } from './lessons/lessons.module';
 import { ModulesModule } from './modules/modules.module';
 
@@ -28,7 +33,7 @@ import { ModulesModule } from './modules/modules.module';
     CommentsModule,
     LanguagesModule, 
     ModulesModule, 
-    LessonsModule
+    LessonsModule, QuizesModule, QuizsModule, QuizModule
   ],
   controllers: [AppController],
   providers: [AppService],
