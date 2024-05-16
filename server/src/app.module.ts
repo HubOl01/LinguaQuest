@@ -11,6 +11,7 @@ import { LikesModule } from './likes/likes.module';
 import { ViewsModule } from './views/views.module';
 import { CommentsModule } from './comments/comments.module';
 import { LanguagesModule } from './languages/languages.module';
+
 import { LessonsModule } from './lessons/lessons.module';
 import { QuizTypesModule } from './quiz-types/quiz-types.module';
 import { QuizTestsModule } from './quiz-tests/quiz-tests.module';
@@ -49,6 +50,7 @@ import { QuizsModule } from './quizs/quizs.module';
     GlobaldictionariesModule,
     BookmarksModule,
     LessonsModule,
+    QuizsModule,
     QuizsModule,
   ],
   controllers: [AppController],

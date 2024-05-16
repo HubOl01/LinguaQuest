@@ -8,9 +8,9 @@ export class Quiz {
   @ApiProperty()
   QuizTypeId:number;
   @ApiProperty()
-  question:string;
+  question:number;
   @ApiProperty()
-  answer:string;
+  answer:number;
   @ApiProperty()
   explanation:string;
   @ApiProperty({ required: false })
@@ -21,4 +21,4 @@ export class Quiz {
   xp:number;
   @ApiProperty()
   date_created:Date;
-}export class Quiz {}
+}
