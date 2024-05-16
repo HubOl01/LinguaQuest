@@ -380,10 +380,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
 <<<<<<< HEAD
+<<<<<<< HEAD
     version: "1.12.0"
 =======
     version: "1.11.0"
 >>>>>>> 564eb98 (add libs)
+=======
+    version: "1.12.0"
+>>>>>>> 5f909d9 (add)
   nested:
     dependency: transitive
     description:
@@ -587,10 +591,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
 <<<<<<< HEAD
+<<<<<<< HEAD
     version: "0.7.0"
 =======
     version: "0.6.1"
 >>>>>>> 564eb98 (add libs)
+=======
+    version: "0.7.0"
+>>>>>>> 5f909d9 (add)
   typed_data:
     dependency: transitive
     description:
@@ -626,6 +634,7 @@ packages:
       url: "https://pub.dev"
     source: hosted
 <<<<<<< HEAD
+<<<<<<< HEAD
     version: "14.2.1"
   web:
     dependency: transitive
@@ -638,10 +647,14 @@ packages:
 =======
     version: "13.0.0"
 >>>>>>> 564eb98 (add libs)
+=======
+    version: "14.2.1"
+>>>>>>> 5f909d9 (add)
   win32:
     dependency: transitive
     description:
       name: win32
+<<<<<<< HEAD
 <<<<<<< HEAD
       sha256: a79dbe579cb51ecd6d30b17e0cae4e0ea15e2c0e66f69ad4198f22a6789e94f4
       url: "https://pub.dev"
@@ -653,6 +666,12 @@ packages:
     source: hosted
     version: "5.5.0"
 >>>>>>> 564eb98 (add libs)
+=======
+      sha256: a79dbe579cb51ecd6d30b17e0cae4e0ea15e2c0e66f69ad4198f22a6789e94f4
+      url: "https://pub.dev"
+    source: hosted
+    version: "5.5.1"
+>>>>>>> 5f909d9 (add)
   xdg_directories:
     dependency: transitive
     description:
@@ -679,9 +698,14 @@ packages:
     version: "3.1.2"
 sdks:
 <<<<<<< HEAD
+<<<<<<< HEAD
   dart: ">=3.4.0 <4.0.0"
   flutter: ">=3.18.0-18.0.pre.54"
 =======
   dart: ">=3.3.4 <4.0.0"
   flutter: ">=3.16.6"
 >>>>>>> 564eb98 (add libs)
+=======
+  dart: ">=3.4.0 <4.0.0"
+  flutter: ">=3.18.0-18.0.pre.54"
+>>>>>>> 5f909d9 (add)
