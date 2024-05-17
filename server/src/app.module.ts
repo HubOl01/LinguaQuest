@@ -18,6 +18,8 @@ import { QuizTypesModule } from './quiz-types/quiz-types.module';
 import { QuizTestsModule } from './quiz-tests/quiz-tests.module';
 import { UserAnswersModule } from './user-answers/user-answers.module';
 import { StudyHistorysModule } from './study-historys/study-historys.module';
+import { AchievementsModule } from './achievements/achievements.module';
+import { AvatarModule } from './avatar/avatar.module';
 
 
 @Module({
@@ -33,7 +35,7 @@ import { StudyHistorysModule } from './study-historys/study-historys.module';
     CommentsModule,
     LanguagesModule, 
     ModulesModule, 
-    LessonsModule, QuizsModule, QuizTypesModule, QuizTestsModule, UserAnswersModule, StudyHistorysModule
+    LessonsModule, QuizsModule, QuizTypesModule, QuizTestsModule, UserAnswersModule, StudyHistorysModule, AchievementsModule, AvatarModule
   ],
   controllers: [AppController],
   providers: [AppService],
