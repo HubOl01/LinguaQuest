@@ -34,6 +34,8 @@ import { GlobaldictionariesModule } from './globaldictionaries/globaldictionarie
 import { BookmarksModule } from './bookmarks/bookmarks.module';
 import { ModulesModule } from './modules/modules.module';
 
+import { AchievementsModule } from './achievements/achievements.module';
+import { AvatarModule } from './avatar/avatar.module';
 
 
 @Module({
@@ -63,7 +65,7 @@ import { ModulesModule } from './modules/modules.module';
     StudyHistorysModule,
     LanguagesModule, 
     ModulesModule, 
-    LessonsModule
+    LessonsModule, AchievementsModule, AvatarModule
   ],
   controllers: [AppController],
   providers: [AppService],
