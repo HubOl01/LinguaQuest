@@ -25,6 +25,8 @@ import { CardwordsModule } from './cardwords/cardwords.module';
 import { GlobaldictionariesModule } from './globaldictionaries/globaldictionaries.module';
 import { BookmarksModule } from './bookmarks/bookmarks.module';
 
+import { AchievementsModule } from './achievements/achievements.module';
+import { AvatarModule } from './avatar/avatar.module';
 
 
 @Module({
@@ -54,7 +56,7 @@ import { BookmarksModule } from './bookmarks/bookmarks.module';
     StudyHistorysModule,
     LanguagesModule, 
     ModulesModule, 
-    LessonsModule
+    LessonsModule, AchievementsModule, AvatarModule
   ],
   controllers: [AppController],
   providers: [AppService],
