@@ -8,32 +8,25 @@ export class CreateQuizDto {
   @IsNotEmpty()
   lessonId: number;
 
-
   @ApiProperty()
   @IsNumber()
   @IsNotEmpty()
-
   QuizTypeId: number;
 
-
   @ApiProperty()
   @IsNumber()
   @IsNotEmpty()
-
   question: string;
 
 
   @ApiProperty()
   @IsNumber()
   @IsNotEmpty()
-
   answer: string;
-
 
   @ApiProperty()
   @IsString()
   @IsNotEmpty()
-
   explanation: string;
 
   @ApiProperty({ required: false })
@@ -44,11 +37,9 @@ export class CreateQuizDto {
   @IsString()
   url_image?: string;
 
-
   @ApiProperty()
   @IsNumber()
   @IsNotEmpty()
-
   xp: number;
 
   @ApiProperty({ required: false })

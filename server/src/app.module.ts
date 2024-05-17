@@ -12,8 +12,17 @@ import { ViewsModule } from './views/views.module';
 import { CommentsModule } from './comments/comments.module';
 import { LanguagesModule } from './languages/languages.module';
 import { ModulesModule } from './modules/modules.module';
+import { QuizsModule } from './quizs/quizs.module';
 import { LessonsModule } from './lessons/lessons.module';
-import { ModulesModule } from './modules/modules.module';
+import { QuizTypesModule } from './quiz-types/quiz-types.module';
+import { QuizTestsModule } from './quiz-tests/quiz-tests.module';
+import { UserAnswersModule } from './user-answers/user-answers.module';
+import { StudyHistorysModule } from './study-historys/study-historys.module';
+import { AchievementsModule } from './achievements/achievements.module';
+import { AvatarModule } from './avatar/avatar.module';
+import { WeeklyRecordsModule } from './weekly-records/weekly-records.module';
+import { LeaguesModule } from './leagues/leagues.module';
+
 
 @Module({
   imports: [
@@ -28,7 +37,7 @@ import { ModulesModule } from './modules/modules.module';
     CommentsModule,
     LanguagesModule, 
     ModulesModule, 
-    LessonsModule
+    LessonsModule, QuizsModule, QuizTypesModule, QuizTestsModule, UserAnswersModule, StudyHistorysModule, AchievementsModule, AvatarModule, WeeklyRecordsModule, LeaguesModule
   ],
   controllers: [AppController],
   providers: [AppService],
