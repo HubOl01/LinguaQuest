@@ -36,6 +36,8 @@ import { ModulesModule } from './modules/modules.module';
 
 import { AchievementsModule } from './achievements/achievements.module';
 import { AvatarModule } from './avatar/avatar.module';
+import { WeeklyRecordsModule } from './weekly-records/weekly-records.module';
+import { LeaguesModule } from './leagues/leagues.module';
 
 
 @Module({
@@ -65,7 +67,7 @@ import { AvatarModule } from './avatar/avatar.module';
     StudyHistorysModule,
     LanguagesModule, 
     ModulesModule, 
-    LessonsModule, AchievementsModule, AvatarModule
+    LessonsModule, AchievementsModule, AvatarModule, WeeklyRecordsModule, LeaguesModule
   ],
   controllers: [AppController],
   providers: [AppService],
