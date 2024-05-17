@@ -14,6 +14,10 @@ import { LanguagesModule } from './languages/languages.module';
 import { ModulesModule } from './modules/modules.module';
 import { QuizsModule } from './quizs/quizs.module';
 import { LessonsModule } from './lessons/lessons.module';
+import { QuizTypesModule } from './quiz-types/quiz-types.module';
+import { QuizTestsModule } from './quiz-tests/quiz-tests.module';
+import { UserAnswersModule } from './user-answers/user-answers.module';
+import { StudyHistorysModule } from './study-historys/study-historys.module';
 
 
 @Module({
@@ -29,7 +33,7 @@ import { LessonsModule } from './lessons/lessons.module';
     CommentsModule,
     LanguagesModule, 
     ModulesModule, 
-    LessonsModule, QuizsModule
+    LessonsModule, QuizsModule, QuizTypesModule, QuizTestsModule, UserAnswersModule, StudyHistorysModule
   ],
   controllers: [AppController],
   providers: [AppService],
