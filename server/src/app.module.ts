@@ -24,7 +24,6 @@ import { DictionariesModule } from './dictionaries/dictionaries.module';
 import { LeaguesModule } from './leagues/leagues.module';
 import { QuizTestsModule } from './quiz-tests/quiz-tests.module';
 import { QuizTypesModule } from './quiz-types/quiz-types.module';
-import { QuizsModule } from './quizs/quizs.module';
 import { RulesModule } from './rules/rules.module';
 import { StudyHistorysModule } from './study-historys/study-historys.module';
 import { WeeklyRecordsModule } from './weekly-records/weekly-records.module';
