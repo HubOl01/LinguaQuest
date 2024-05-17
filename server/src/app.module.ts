@@ -20,6 +20,8 @@ import { UserAnswersModule } from './user-answers/user-answers.module';
 import { StudyHistorysModule } from './study-historys/study-historys.module';
 import { AchievementsModule } from './achievements/achievements.module';
 import { AvatarModule } from './avatar/avatar.module';
+import { WeeklyRecordsModule } from './weekly-records/weekly-records.module';
+import { LeaguesModule } from './leagues/leagues.module';
 
 
 @Module({
@@ -35,7 +37,7 @@ import { AvatarModule } from './avatar/avatar.module';
     CommentsModule,
     LanguagesModule, 
     ModulesModule, 
-    LessonsModule, QuizsModule, QuizTypesModule, QuizTestsModule, UserAnswersModule, StudyHistorysModule, AchievementsModule, AvatarModule
+    LessonsModule, QuizsModule, QuizTypesModule, QuizTestsModule, UserAnswersModule, StudyHistorysModule, AchievementsModule, AvatarModule, WeeklyRecordsModule, LeaguesModule
   ],
   controllers: [AppController],
   providers: [AppService],
