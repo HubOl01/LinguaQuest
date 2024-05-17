@@ -6,9 +6,9 @@ import { PrismaService } from 'src/prisma/prisma.service';
 @Injectable()
 export class QuizsService {
   constructor(private prisma: PrismaService) {}
-  
+
   create(createQuizDto: CreateQuizDto) {
-    return this.prisma.quiz.create({data: createQuizDto});
+    return this.prisma.quiz.create({ data: createQuizDto });
   }
 
   findAll() {
@@ -16,14 +16,14 @@ export class QuizsService {
   }
 
   findOne(id: number) {
-    return this.prisma.quiz.findUnique({ where: { idQuiz:id } });
+    return this.prisma.quiz.findUnique({ where: { idQuiz: id } });
   }
 
   update(id: number, updateQuizDto: UpdateQuizDto) {
     return this.prisma.lesson.update({
       where: { idLesson: id },
       data: updateQuizDto,
-  });
+    });
   }
 
   remove(id: number) {
