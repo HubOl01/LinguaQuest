@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'BottomNavigation.dart';
 import 'pages/main/mainPage.dart';
 
 void main() {
@@ -14,12 +15,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'LinguaQuest',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
-       
+      //  scaffoldBackgroundColor: Colors.white,
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
+        useMaterial3: false,
       ),
-      home: MainPage(),
+      home: const ButtomNavigation(),
     );
   }
 }
