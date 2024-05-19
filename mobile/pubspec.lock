@@ -275,6 +275,9 @@ packages:
     source: sdk
     version: "0.0.0"
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b19d6e9 (add post pages)
   fluttertoast:
     dependency: "direct main"
     description:
@@ -283,8 +286,11 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "8.2.5"
+<<<<<<< HEAD
 =======
 >>>>>>> 564eb98 (add libs)
+=======
+>>>>>>> b19d6e9 (add post pages)
   get:
     dependency: "direct main"
     description:
@@ -334,14 +340,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "4.1.7"
-  insta_image_viewer:
-    dependency: "direct main"
-    description:
-      name: insta_image_viewer
-      sha256: "5c3150415d19945ee7eb9a986ed636219e384164e53a4854e8c6f3dbb3b3e197"
-      url: "https://pub.dev"
-    source: hosted
-    version: "1.0.4"
   json_annotation:
     dependency: transitive
     description:
