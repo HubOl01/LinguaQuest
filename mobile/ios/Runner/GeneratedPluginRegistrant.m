@@ -28,14 +28,20 @@
 #endif
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3b2d46a (add Post)
 #if __has_include(<sqflite/SqflitePlugin.h>)
 #import <sqflite/SqflitePlugin.h>
 #else
 @import sqflite;
 #endif
 
+<<<<<<< HEAD
 =======
 >>>>>>> 564eb98 (add libs)
+=======
+>>>>>>> 3b2d46a (add Post)
 @implementation GeneratedPluginRegistrant
 
 + (void)registerWithRegistry:(NSObject<FlutterPluginRegistry>*)registry {
@@ -44,9 +50,12 @@
   [FluttertoastPlugin registerWithRegistrar:[registry registrarForPlugin:@"FluttertoastPlugin"]];
   [PathProviderPlugin registerWithRegistrar:[registry registrarForPlugin:@"PathProviderPlugin"]];
   [SqflitePlugin registerWithRegistrar:[registry registrarForPlugin:@"SqflitePlugin"]];
+<<<<<<< HEAD
 =======
   [PathProviderPlugin registerWithRegistrar:[registry registrarForPlugin:@"PathProviderPlugin"]];
 >>>>>>> 564eb98 (add libs)
+=======
+>>>>>>> 3b2d46a (add Post)
 }
 
 @end
