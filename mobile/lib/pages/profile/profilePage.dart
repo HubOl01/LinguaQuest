@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
+
+import '../../core/utils/toastShow.dart';
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage({super.key});
@@ -9,60 +12,77 @@ class ProfilePage extends StatelessWidget {
       children: [
         Container(
           height: 200,
-          color: Colors.grey.shade200,
+          // color: Colors.gr,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Image.network(
-                "https://ya.ru/images/search?img_url=https%3A%2F%2Fsun1-98.userapi.com%2Fs%2Fv1%2Fig2%2FLfnoBVxZojzcr9YVqswNnZXMXj630tCPHJUdi94oKLPCrAyybhv-2c0M9in5Pxqq0Rli1dkZVNJlMc3ySF5pLGey.jpg%3Fsize%3D1800x1800%26quality%3D95%26crop%3D0%2C0%2C1800%2C1800%26ava%3D1&lr=5&pos=20&rpt=simage&text=аватарка",
-                height: 50,
-                width: 50,
+              ClipRRect(
+                borderRadius: BorderRadius.circular(25),
+                child: Image.network(
+                  "https://sun9-71.userapi.com/impg/DkA2EBbxazNq1ZTUP-jColx-jZaqIMaZNIg-hg/OcLjiyUbG-w.jpg?size=1024x1024&quality=95&sign=8952210a4d259c027e4bc0430d13bf9c&c_uniq_tag=YHUBEMe01IH7r6oKHNbaQ3QuNDnhfass0o57WxjLRKo&type=album",
+                  height: 150,
+                  width: 150,
+                ),
               ),
               const SizedBox(
                 height: 10,
               ),
               Text(
                 "Max, 20",
-                style: TextStyle(fontWeight: FontWeight.bold),
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
               )
             ],
           ),
         ),
-        const SizedBox(
-          height: 10,
+        ListTile(
+          onTap: () {
+            toastShow(context);
+          },
+          title: Text(
+            "Statistics",
+          ),
+          trailing: Icon(Icons.arrow_forward_ios_rounded),
         ),
-        Text(
-          "Statistics",
+        ListTile(
+          onTap: () {
+            toastShow(context);
+          },
+          title: Text(
+            "Languages",
+          ),
+          trailing: Icon(Icons.arrow_forward_ios_rounded),
         ),
-        const SizedBox(
-          height: 10,
+        ListTile(
+          onTap: () {
+            toastShow(context);
+          },
+          title: Text(
+            "My bookmates",
+          ),
+          trailing: Icon(Icons.arrow_forward_ios_rounded),
         ),
-        Text(
-          "Languages",
+        ListTile(
+          onTap: () {
+            toastShow(context);
+          },
+          title: Text(
+            "My achievements",
+          ),
+          trailing: Icon(Icons.arrow_forward_ios_rounded),
         ),
-        const SizedBox(
-          height: 10,
-        ),
-        Text(
-          "My bookmates",
-        ),
-        const SizedBox(
-          height: 10,
-        ),
-        Text(
-          "My achievements",
-        ),
-        const SizedBox(
-          height: 10,
-        ),
-        Text(
-          "Settings",
-        ),
-        const SizedBox(
-          height: 10,
+        ListTile(
+          onTap: () {
+            toastShow(context);
+          },
+          title: Text(
+            "Settings",
+          ),
+          trailing: Icon(Icons.arrow_forward_ios_rounded),
         ),
       ],
     );
   }
+
+  
 }

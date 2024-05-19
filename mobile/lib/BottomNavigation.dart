@@ -37,42 +37,55 @@ class _ButtomNavigationState extends State<ButtomNavigation> {
                 left: 15,
                 right: 15,
                 child: SafeArea(
+                    child: Container(
+                      
+                      decoration: BoxDecoration(
+                        
+                        boxShadow: [
+                          BoxShadow(color: Colors.grey, blurRadius: 25)
+                        ],
+                        // border: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25)),
+                      borderRadius: BorderRadius.circular(25),
+                      ),
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(25),
-                    child: BottomNavigationBar(
-                      onTap: (index) {
-                        changeIndex.changeTabIndex(index);
-                      },
-                      // backgroundColor: grayColor,
-                      currentIndex: currentIndex,
-                      // selectedItemColor: BarColors.selected,
-                      // unselectedItemColor: BarColors.unselected,
-                      showSelectedLabels: true,
-                      selectedFontSize: 12,
-                      unselectedFontSize: 12,
-                      showUnselectedLabels: true,
-                      enableFeedback: true,
-                      landscapeLayout:
-                          BottomNavigationBarLandscapeLayout.centered,
-                      type: BottomNavigationBarType.fixed,
-                      items: [
-                        BottomNavigationBarItem(
-                            icon: Icon(Icons.school_outlined),
-                            label: "Main",
-                            tooltip: "Main"),
-                        BottomNavigationBarItem(
-                            icon: Icon(Icons.newspaper),
-                            label: "Posts",
-                            tooltip: "Posts"),
-                        BottomNavigationBarItem(
-                            icon: Icon(Icons.messenger_outline),
-                            label: "Chat",
-                            tooltip: "Chat"),
-                        BottomNavigationBarItem(
-                            icon: Icon(Icons.person_outline),
-                            label: "Profile",
-                            tooltip: "Profile"),
-                      ],
+                      child: BottomNavigationBar(
+                        
+                        // elevation: 50,
+                        onTap: (index) {
+                          changeIndex.changeTabIndex(index);
+                        },
+                        // backgroundColor: grayColor,
+                        currentIndex: currentIndex,
+                        // selectedItemColor: BarColors.selected,
+                        // unselectedItemColor: BarColors.unselected,
+                        showSelectedLabels: true,
+                        selectedFontSize: 12,
+                        unselectedFontSize: 12,
+                        showUnselectedLabels: true,
+                        enableFeedback: true,
+                        landscapeLayout:
+                            BottomNavigationBarLandscapeLayout.centered,
+                        type: BottomNavigationBarType.fixed,
+                        items: [
+                          BottomNavigationBarItem(
+                              icon: Icon(Icons.school_outlined),
+                              label: "Main",
+                              tooltip: "Main"),
+                          BottomNavigationBarItem(
+                              icon: Icon(Icons.newspaper),
+                              label: "Posts",
+                              tooltip: "Posts"),
+                          BottomNavigationBarItem(
+                              icon: Icon(Icons.messenger_outline),
+                              label: "Chat",
+                              tooltip: "Chat"),
+                          BottomNavigationBarItem(
+                              icon: Icon(Icons.person_outline),
+                              label: "Profile",
+                              tooltip: "Profile"),
+                        ],
+                      ),
                     ),
                   ),
                 ))
