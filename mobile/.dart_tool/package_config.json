@@ -266,18 +266,28 @@
     },
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
       "name": "file",
       "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/file-7.0.0",
+=======
+      "name": "file",
+      "rootUri": "file:///home/foward01/.pub-cache/hosted/pub.dev/file-7.0.0",
+>>>>>>> 5c41daa (add Post)
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
     {
       "name": "fixnum",
+<<<<<<< HEAD
       "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/fixnum-1.1.0",
+=======
+      "rootUri": "file:///home/foward01/.pub-cache/hosted/pub.dev/fixnum-1.1.0",
+>>>>>>> 5c41daa (add Post)
       "packageUri": "lib/",
       "languageVersion": "2.19"
     },
     {
+<<<<<<< HEAD
       "name": "flutter",
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -289,6 +299,8 @@
       "rootUri": "file:///home/foward01/snap/flutter/common/flutter/packages/flutter",
 >>>>>>> 6bd924e (add pages)
 =======
+=======
+>>>>>>> 5c41daa (add Post)
       "name": "flutter",
 <<<<<<< HEAD
       "rootUri": "file:///C:/dev/flutter/packages/flutter",
@@ -506,6 +518,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "flutter_cache_manager",
+      "rootUri": "file:///home/foward01/.pub-cache/hosted/pub.dev/flutter_cache_manager-3.3.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
       "name": "flutter_keyboard_visibility",
       "rootUri": "file:///home/foward01/.pub-cache/hosted/pub.dev/flutter_keyboard_visibility-6.0.0",
       "packageUri": "lib/",
@@ -637,6 +655,18 @@
     {
       "name": "hive",
       "rootUri": "file:///home/foward01/.pub-cache/hosted/pub.dev/hive-2.2.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "http",
+      "rootUri": "file:///home/foward01/.pub-cache/hosted/pub.dev/http-1.2.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.3"
+    },
+    {
+      "name": "http_parser",
+      "rootUri": "file:///home/foward01/.pub-cache/hosted/pub.dev/http_parser-4.0.2",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -1242,7 +1272,16 @@
       "languageVersion": "2.17"
     },
     {
+<<<<<<< HEAD
 >>>>>>> 535a56b (add bottom and sliver appbar)
+=======
+      "name": "uuid",
+      "rootUri": "file:///home/foward01/.pub-cache/hosted/pub.dev/uuid-4.4.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+>>>>>>> 5c41daa (add Post)
       "name": "vector_math",
       "rootUri": "file:///home/foward01/.pub-cache/hosted/pub.dev/vector_math-2.1.4",
       "packageUri": "lib/",
