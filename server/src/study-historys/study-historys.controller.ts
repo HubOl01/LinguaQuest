@@ -2,8 +2,10 @@ import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/commo
 import { StudyHistorysService } from './study-historys.service';
 import { CreateStudyHistoryDto } from './dto/create-study-history.dto';
 import { UpdateStudyHistoryDto } from './dto/update-study-history.dto';
+import { ApiTags } from '@nestjs/swagger';
 
 @Controller('study-historys')
+@ApiTags('study-historys')
 export class StudyHistorysController {
   constructor(private readonly studyHistorysService: StudyHistorysService) {}
 
@@ -23,7 +25,10 @@ export class StudyHistorysController {
   }
 
   @Patch(':id')
-  update(@Param('id') id: string, @Body() updateStudyHistoryDto: UpdateStudyHistoryDto) {
+  update(
+    @Param('id') id: string,
+    @Body() updateStudyHistoryDto: UpdateStudyHistoryDto,
+  ) {
     return this.studyHistorysService.update(+id, updateStudyHistoryDto);
   }
 

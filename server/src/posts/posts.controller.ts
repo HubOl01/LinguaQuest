@@ -30,6 +30,11 @@ export class PostsController {
     return this.postsService.findAll();
   }
 
+  @Get('get-only-user')
+  @ApiOkResponse({ type: PostEntity, isArray: true })
+  findAllOnlyUser(@Param('idUser') idUser: string) {
+    return this.postsService.findOnlyUser(+idUser);
+  }
   @Get('get-only-publication')
   @ApiOkResponse({ type: PostEntity, isArray: true })
   findAllOnlyPublic() {

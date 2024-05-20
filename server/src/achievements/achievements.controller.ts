@@ -2,8 +2,10 @@ import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/commo
 import { AchievementsService } from './achievements.service';
 import { CreateAchievementDto } from './dto/create-achievement.dto';
 import { UpdateAchievementDto } from './dto/update-achievement.dto';
+import { ApiTags } from '@nestjs/swagger';
 
 @Controller('achievements')
+@ApiTags('achievements')
 export class AchievementsController {
   constructor(private readonly achievementsService: AchievementsService) {}
 
@@ -23,7 +25,10 @@ export class AchievementsController {
   }
 
   @Patch(':id')
-  update(@Param('id') id: string, @Body() updateAchievementDto: UpdateAchievementDto) {
+  update(
+    @Param('id') id: string,
+    @Body() updateAchievementDto: UpdateAchievementDto,
+  ) {
     return this.achievementsService.update(+id, updateAchievementDto);
   }
 

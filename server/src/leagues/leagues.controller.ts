@@ -2,8 +2,10 @@ import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/commo
 import { LeaguesService } from './leagues.service';
 import { CreateLeagueDto } from './dto/create-league.dto';
 import { UpdateLeagueDto } from './dto/update-league.dto';
+import { ApiTags } from '@nestjs/swagger';
 
 @Controller('leagues')
+@ApiTags('leagues')
 export class LeaguesController {
   constructor(private readonly leaguesService: LeaguesService) {}
 

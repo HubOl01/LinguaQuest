@@ -29,6 +29,7 @@ import { AchievementsModule } from './achievements/achievements.module';
 import { AvatarModule } from './avatar/avatar.module';
 import { WeeklyRecordsModule } from './weekly-records/weekly-records.module';
 import { LeaguesModule } from './leagues/leagues.module';
+import { QuizzesModule } from './quizzes/quizzes.module';
 
 @Module({
   imports: [
@@ -62,6 +63,7 @@ import { LeaguesModule } from './leagues/leagues.module';
     AvatarModule,
     WeeklyRecordsModule,
     LeaguesModule,
+    QuizzesModule,
   ],
   controllers: [AppController],
   providers: [AppService],

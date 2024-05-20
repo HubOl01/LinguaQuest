@@ -14,6 +14,9 @@ export class PostsService {
   findAll() {
     return this.prisma.post.findMany();
   }
+  findOnlyUser(idUser: number) {
+    return this.prisma.post.findMany({ where: { userId: idUser } });
+  }
   findOnlyPublication() {
     return this.prisma.post.findMany({ where: { publicationStatusId: 1 } });
   }

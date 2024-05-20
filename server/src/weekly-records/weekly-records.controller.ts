@@ -2,8 +2,10 @@ import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/commo
 import { WeeklyRecordsService } from './weekly-records.service';
 import { CreateWeeklyRecordDto } from './dto/create-weekly-record.dto';
 import { UpdateWeeklyRecordDto } from './dto/update-weekly-record.dto';
+import { ApiTags } from '@nestjs/swagger';
 
 @Controller('weekly-records')
+@ApiTags('weekly-records')
 export class WeeklyRecordsController {
   constructor(private readonly weeklyRecordsService: WeeklyRecordsService) {}
 
@@ -23,7 +25,10 @@ export class WeeklyRecordsController {
   }
 
   @Patch(':id')
-  update(@Param('id') id: string, @Body() updateWeeklyRecordDto: UpdateWeeklyRecordDto) {
+  update(
+    @Param('id') id: string,
+    @Body() updateWeeklyRecordDto: UpdateWeeklyRecordDto,
+  ) {
     return this.weeklyRecordsService.update(+id, updateWeeklyRecordDto);
   }
 

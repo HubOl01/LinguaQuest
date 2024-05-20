@@ -2,8 +2,10 @@ import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/commo
 import { AvatarService } from './avatar.service';
 import { CreateAvatarDto } from './dto/create-avatar.dto';
 import { UpdateAvatarDto } from './dto/update-avatar.dto';
+import { ApiTags } from '@nestjs/swagger';
 
 @Controller('avatar')
+@ApiTags('avatar')
 export class AvatarController {
   constructor(private readonly avatarService: AvatarService) {}
 
