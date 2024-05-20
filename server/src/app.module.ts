@@ -13,17 +13,6 @@ import { CommentsModule } from './comments/comments.module';
 import { LanguagesModule } from './languages/languages.module';
 
 import { LessonsModule } from './lessons/lessons.module';
-
-import { UserAnswersModule } from './user-answers/user-answers.module';
-import { AchievementsModule } from './achievements/achievements.module';
-import { AvatarModule } from './avatar/avatar.module';
-
-import { LeaguesModule } from './leagues/leagues.module';
-import { QuizTestsModule } from './quiz-tests/quiz-tests.module';
-import { QuizTypesModule } from './quiz-types/quiz-types.module';
-import { StudyHistorysModule } from './study-historys/study-historys.module';
-import { WeeklyRecordsModule } from './weekly-records/weekly-records.module';
-
 import { QuizTypesModule } from './quiz-types/quiz-types.module';
 import { QuizTestsModule } from './quiz-tests/quiz-tests.module';
 import { UserAnswersModule } from './user-answers/user-answers.module';
@@ -40,7 +29,6 @@ import { AchievementsModule } from './achievements/achievements.module';
 import { AvatarModule } from './avatar/avatar.module';
 import { WeeklyRecordsModule } from './weekly-records/weekly-records.module';
 import { LeaguesModule } from './leagues/leagues.module';
-
 
 @Module({
   imports: [
@@ -67,9 +55,13 @@ import { LeaguesModule } from './leagues/leagues.module';
     QuizTestsModule,
     UserAnswersModule,
     StudyHistorysModule,
-    LanguagesModule, 
-    ModulesModule, 
-    LessonsModule, AchievementsModule, AvatarModule, WeeklyRecordsModule, LeaguesModule
+    LanguagesModule,
+    ModulesModule,
+    LessonsModule,
+    AchievementsModule,
+    AvatarModule,
+    WeeklyRecordsModule,
+    LeaguesModule,
   ],
   controllers: [AppController],
   providers: [AppService],
