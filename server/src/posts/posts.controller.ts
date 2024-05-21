@@ -6,6 +6,7 @@ import {
   Patch,
   Param,
   Delete,
+  Query,
 } from '@nestjs/common';
 import { PostsService } from './posts.service';
 import { CreatePostDto } from './dto/create-post.dto';
@@ -32,7 +33,7 @@ export class PostsController {
 
   @Get('get-only-user')
   @ApiOkResponse({ type: PostEntity, isArray: true })
-  findAllOnlyUser(@Param('idUser') idUser: string) {
+  findAllOnlyUser(@Query('userId') idUser: number) {
     return this.postsService.findOnlyUser(+idUser);
   }
   @Get('get-only-publication')

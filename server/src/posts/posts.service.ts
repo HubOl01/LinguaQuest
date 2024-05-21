@@ -12,16 +12,25 @@ export class PostsService {
   }
 
   findAll() {
-    return this.prisma.post.findMany();
+    return this.prisma.post.findMany({ orderBy: { date_created: 'desc' } });
   }
   findOnlyUser(idUser: number) {
-    return this.prisma.post.findMany({ where: { userId: idUser } });
+    return this.prisma.post.findMany({
+      where: { userId: idUser },
+      orderBy: { date_created: 'desc' },
+    });
   }
   findOnlyPublication() {
-    return this.prisma.post.findMany({ where: { publicationStatusId: 1 } });
+    return this.prisma.post.findMany({
+      where: { publicationStatusId: 1 },
+      orderBy: { date_created: 'desc' },
+    });
   }
   findOnlyModeration() {
-    return this.prisma.post.findMany({ where: { publicationStatusId: 3 } });
+    return this.prisma.post.findMany({
+      where: { publicationStatusId: 3 },
+      orderBy: { date_created: 'desc' },
+    });
   }
 
   findOne(id: number) {
