@@ -1,4 +1,6 @@
+import 'package:LinguaQuest/pages/cardwords/cardWords.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 
 class MainPage extends StatelessWidget {
@@ -16,6 +18,9 @@ class MainPage extends StatelessWidget {
                   borderRadius: BorderRadius.only(
                       bottomLeft: Radius.circular(20),
                       bottomRight: Radius.circular(20))),
+                      actions: [
+                        // IconButton(onPressed: (){}, icon: Icon(Icons.))
+                      ],
               flexibleSpace: FlexibleSpaceBar(
                 expandedTitleScale: 1,
                 // titlePadding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
@@ -32,20 +37,32 @@ class MainPage extends StatelessWidget {
                           Expanded(
                             child: SizedBox(
                               height: 100,
-                              child: Card(
-                                margin: const EdgeInsets.all(0),
-                                elevation: 0,
-                                shape: RoundedRectangleBorder(
-                                  // side: BorderSide(color: Colors.white70, width: 1),
-                                  borderRadius: BorderRadius.circular(15),
-                                ),
-                                color: Colors.white,
-                                child: const Center(
-                                  child: Text(
-                                    "Cards",
-                                    style: TextStyle(
-                                        fontSize: 20,
-                                        fontWeight: FontWeight.bold),
+                              child: GestureDetector(
+                                onTap: () => Get.to(const CardWords()),
+                                child: Card(
+                                  margin: const EdgeInsets.all(0),
+                                  elevation: 0,
+                                  shape: RoundedRectangleBorder(
+                                    // side: BorderSide(color: Colors.white70, width: 1),
+                                    borderRadius: BorderRadius.circular(15),
+                                  ),
+                                  color: Colors.white,
+                                  child: Row(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.center,
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      Text(
+                                        "Cards",
+                                        style: TextStyle(
+                                            fontSize: 18,
+                                            fontWeight: FontWeight.bold),
+                                      ),
+                                      const SizedBox(
+                                        width: 10,
+                                      ),
+                                      SvgPicture.asset('assets/icons/cards.svg', height: 30,)
+                                    ],
                                   ),
                                 ),
                               ),
@@ -65,13 +82,22 @@ class MainPage extends StatelessWidget {
                                   borderRadius: BorderRadius.circular(15),
                                 ),
                                 color: Colors.white,
-                                child: const Center(
-                                  child: Text(
-                                    "Dictionary",
-                                    style: TextStyle(
-                                        fontSize: 20,
-                                        fontWeight: FontWeight.bold),
-                                  ),
+                                child: Row(
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    Text(
+                                      "Dictionary",
+                                      style: TextStyle(
+                                          fontSize: 20,
+                                          fontWeight: FontWeight.bold),
+                                    ),
+                                    const SizedBox(
+                                      width: 10,
+                                    ),
+                                    SvgPicture.asset(
+                                        'assets/icons/dictionary.svg', height: 30,)
+                                  ],
                                 ),
                               ),
                             ),
@@ -84,7 +110,7 @@ class MainPage extends StatelessWidget {
               ),
               // bottom: ,
               title: Text("Main"),
-              pinned: false,
+              pinned: true,
               expandedHeight: 170,
               floating: true,
               forceElevated: innerBoxIsScrolled,

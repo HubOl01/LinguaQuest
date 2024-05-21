@@ -94,7 +94,7 @@ class _PostState extends State<Post> {
                               fit: BoxFit.cover,
                             )
                           : Padding(
-                            padding: const EdgeInsets.symmetric(vertical: 8.0),
+                            padding: const EdgeInsets.symmetric(horizontal: 10.0),
                             child: Text(widget.description!),
                           )),
                 ),
