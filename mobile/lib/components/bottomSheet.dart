@@ -1,104 +1,67 @@
-import 'package:LinguaQuest/pages/profile/profilePage.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../core/data/avatars.dart';
-import '../core/models/avatarModel.dart';
+import '../core/models/ModuleModel.dart';
 
 class BottomSheetContent extends StatelessWidget {
-  const BottomSheetContent();
+  final ScrollController controller;
+  final List<Lesson> lessons;
+  const BottomSheetContent({super.key, required this.lessons, required this.controller});
 
   @override
   Widget build(BuildContext context) {
-    return DefaultTabController(
-      length: 2,
+    return SingleChildScrollView(
+      controller: controller,
       child: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: <Widget>[
-          Container(
-            margin: const EdgeInsets.all(8),
-            height: 32,
-            decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(20),
-                boxShadow: [
-                  BoxShadow(
-                      blurRadius: 10,
-                      color:
-                          Theme.of(context).colorScheme.primary.withOpacity(.5))
-                ],
-                color: Theme.of(context).colorScheme.surface),
-            child: TabBar(
-              // padding: const EdgeInsets.all(10),
-              indicatorSize: TabBarIndicatorSize.tab,
-              indicator: BoxDecoration(
-                color: Theme.of(context).colorScheme.primary,
-                // boxShadow: [
-                //   BoxShadow(
-                //       blurRadius: 10,
-                //       color:
-                //           Theme.of(context).colorScheme.primary.withOpacity(.5))
-                // ],
-                borderRadius: BorderRadius.circular(20),
-              ),
-              unselectedLabelColor: Theme.of(context).colorScheme.primary,
-              labelColor: Theme.of(context).colorScheme.onPrimary,
-              dividerColor: Colors.black,
-              tabs: const [
-                Tab(text: 'Man'),
-                Tab(text: 'Woman'),
-              ],
-            ),
+        children: [
+          Column(
+              mainAxisSize: MainAxisSize.min,
+              children: lessons
+                  .map((lesson) => Padding(
+                        padding: const EdgeInsets.all(10.0),
+                        child: Column(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Text(
+                              lesson.titleLesson,
+                              style: const TextStyle(
+                                  fontSize: 18, fontWeight: FontWeight.bold),
+                            ),
+                            Text(
+                              lesson.rule,
+                              style: const TextStyle(fontSize: 18),
+                            ),
+                          ],
+                        ),
+                      ))
+                  .toList()),
+          const SizedBox(
+            height: 10,
           ),
-          Flexible(
-            child: TabBarView(
-              children: [
-                AvatarList(
-                    avatars: avatars
-                        .where((avatar) => avatar.type == 'man')
-                        .toList()),
-                AvatarList(
-                    avatars: avatars
-                        .where((avatar) => avatar.type == 'woman')
-                        .toList()),
-              ],
+          SizedBox(
+            height: 40,
+            width: context.width - 20,
+            child: ElevatedButton(
+              onPressed: () {
+                Get.back();
+              },
+              child: Text("Понятно",
+                  style: TextStyle(fontSize: 18, color: Colors.white)),
             ),
-          ),
+          )
         ],
       ),
     );
-  }
-}
 
-class AvatarList extends StatefulWidget {
-  final List<AvatarModel> avatars;
+    // <Widget>[
+    //   Text(
+    //     content,
+    //     style: const TextStyle(fontSize: 24),
+    //   ),
+    //   const SizedBox(
+    //     height: 10,
+    //   ),
 
-  const AvatarList({required this.avatars});
-
-  @override
-  State<AvatarList> createState() => _AvatarListState();
-}
-
-class _AvatarListState extends State<AvatarList> {
-  @override
-  Widget build(BuildContext context) {
-    return GridView.builder(
-      physics: const BouncingScrollPhysics(),
-      padding: const EdgeInsets.all(2),
-      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: 3, crossAxisSpacing: 2, mainAxisSpacing: 2),
-      itemCount: widget.avatars.length,
-      itemBuilder: (BuildContext context, int index) {
-        return GestureDetector(
-          child: ClipRRect(
-            borderRadius: BorderRadius.circular(15),
-            child: Image.asset(widget.avatars[index].url_avatar),
-          ),
-          onTap: () {
-            currentAvatarCubit.changeAvatar(widget.avatars[index]);
-            Get.back();
-          },
-        );
-      },
-    );
+    // );
   }
 }

@@ -1,6 +1,9 @@
 import 'dart:convert';
 
+import 'package:LinguaQuest/core/data/cubit/add_post_cubit.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:get/get.dart';
 
 import '../../core/models/postModel.dart';
 
@@ -13,7 +16,7 @@ class EditorPost extends StatefulWidget {
 }
 
 class _EditorPostState extends State<EditorPost> {
-   late TextEditingController _titleController;
+  late TextEditingController _titleController;
   late TextEditingController _descriptionController;
 
   @override
@@ -27,17 +30,33 @@ class _EditorPostState extends State<EditorPost> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      floatingActionButton: FloatingActionButton(onPressed: (){}, child: const Icon(Icons.check),),
-      appBar: AppBar(
-        title: Text('Add Post'),
-        actions: [
-          IconButton(
-            icon: Icon(Icons.save),
+      floatingActionButton: BlocConsumer<AddPostCubit, AddPostState>(
+        listener: (context, state) {
+          if (state is AddPostSuccess) {
+            ScaffoldMessenger.of(context).showSnackBar(
+              const SnackBar(content: Text('Post created successfully!')),
+            );
+            Get.back();
+          } else if (state is AddPostError) {
+            ScaffoldMessenger.of(context).showSnackBar(
+              SnackBar(content: Text(state.message)),
+            );
+          }
+        },
+        builder: (context, state) {
+          if (state is AddPostLoading) {
+            return CircularProgressIndicator();
+          }
+          return FloatingActionButton(
             onPressed: () {
               _savePost();
             },
-          ),
-        ],
+            child: const Icon(Icons.check),
+          );
+        },
+      ),
+      appBar: AppBar(
+        title: const Text('Add Post'),
       ),
       body: Padding(
         padding: EdgeInsets.all(16.0),
@@ -80,5 +99,7 @@ class _EditorPostState extends State<EditorPost> {
 
     // Save the post to database or send it to server
     print(jsonPost);
+    context.read<AddPostCubit>().sendPostRequest(
+        _titleController.text, _descriptionController.text, false);
   }
 }

@@ -15,56 +15,70 @@ class ProfilePosts extends StatefulWidget {
   State<ProfilePosts> createState() => _ProfilePostsState();
 }
 
+bool _showFab = true;
+
+// NotificationListener<UserScrollNotification>(
+//                         onNotification: (notification) {
+//                           final ScrollDirection direction =
+//                               notification.direction;
+//                           setState(() {
+//                             if (direction == ScrollDirection.reverse) {
+//                               _showFab = false;
+//                             } else if (direction == ScrollDirection.forward) {
+//                               _showFab = true;
+//                             }
+//                           });
+//                           return true;
+//                         },
 class _ProfilePostsState extends State<ProfilePosts> {
-  bool _showFab = true;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Stack(
         children: [
-          // future: context.read<PostsUserCubit>().getPostsUser(),
-          BlocBuilder<PostsUserCubit, PostsUserState>(
-              builder: (context, state) {
-            if (state is PostUserLoading) {
-              return const Center(child: CircularProgressIndicator());
-            } else if (state is PostUserLoaded) {
-              return NotificationListener<UserScrollNotification>(
-                  onNotification: (notification) {
-                    final ScrollDirection direction =
-                        notification.direction;
-                    setState(() {
-                      if (direction == ScrollDirection.reverse) {
-                        _showFab = false;
-                      } else if (direction == ScrollDirection.forward) {
-                        _showFab = true;
-                      }
-                    });
-                    return true;
-                  },
-                  child: ListView.builder(
-                    itemCount: state.posts.length,
-                    itemBuilder: (context, index) {
-                      final post = state.posts[index];
-                      return Column(
-                        children: [
-                          Post(
-                              isPostPublic: false,
-                              description: post.description,
-                              userAvatar: "",
-                              user: "Max",
-                              like: false,
-                              status: post.publicationStatusId!),
-                              SizedBox(height: index == state.posts.length-1 ? 60 : 0,)
-                        ],
-                      );
-                    },
-                  ));
-            } else if (state is PostUserError) {
-              return Text(state.message);
-            } else {
-              return Container();
-            }
-          }),
+          FutureBuilder(
+              future: context.read<PostsUserCubit>().getPostsUser(),
+              builder: (context, snapshot) {
+                return BlocBuilder<PostsUserCubit, PostsUserState>(
+                    builder: (context, state) {
+                  if (state is PostUserLoading) {
+                    return const Center(child: CircularProgressIndicator());
+                  } else if (state is PostUserLoaded) {
+                    if (state.posts.isEmpty) {
+                      return const Center(
+                          child: Text(
+                        "There are no publications, you can publish your entry.",
+                        textAlign: TextAlign.center,
+                      ));
+                    }
+                    return ListView.builder(
+                      physics: const BouncingScrollPhysics(),
+                      itemCount: state.posts.length,
+                      itemBuilder: (context, index) {
+                        final post = state.posts[index];
+                        return Column(
+                          children: [
+                            Post(
+                                isPostPublic: false,
+                                description: post.description,
+                                userAvatar: "",
+                                user: "Max",
+                                like: false,
+                                status: post.publicationStatusId!),
+                            SizedBox(
+                              height: index == state.posts.length - 1 ? 60 : 0,
+                            )
+                          ],
+                        );
+                      },
+                    );
+                  } else if (state is PostUserError) {
+                    return Text(state.message);
+                  } else {
+                    return const SizedBox();
+                  }
+                });
+              }),
           Positioned(
               right: 15,
               bottom: 80,

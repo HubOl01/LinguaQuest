@@ -26,14 +26,14 @@ class TextStyles {
     fontSize: 24,
     // height: 31.2.toFigmaHeight(20),
   );
-//   static TextStyle text24w500 = TextStyle(
-//     color: TextColors.textPrimary,
-//     // fontFamily: fontFamily,
-//     fontFamily: ".SF Pro Display",
-//     fontWeight: FontWeight.w500,
-//     fontSize: 24,
-//     // height: 31.2.toFigmaHeight(20),
-//   );
+  static TextStyle text24w500 = TextStyle(
+    // color: Colors.black,
+    // fontFamily: fontFamily,
+    // fontFamily: ".SF Pro Display",
+    fontWeight: FontWeight.w500,
+    fontSize: 24,
+    // height: 31.2.toFigmaHeight(20),
+  );
 //   static TextStyle text24w500ClashDisplay = TextStyle(
 //     color: TextColors.textPrimary,
 //     // fontFamily: fontFamily,
@@ -81,14 +81,22 @@ class TextStyles {
 //     fontSize: 18,
 //     // height: 21.47.toFigmaHeight(20),
 //   );
-//   static TextStyle text18w400 = TextStyle(
-//     color: TextColors.textPrimary,
-//     // fontFamily: fontFamily,
-//     fontFamily: ".SF Pro Display",
-//     fontWeight: FontWeight.w400,
-//     fontSize: 18,
-//     // height: 21.47.toFigmaHeight(20),
-//   );
+  static TextStyle text18w400 = TextStyle(
+    // color: Colors/,
+    // fontFamily: fontFamily,
+    fontFamily: ".SF Pro Display",
+    fontWeight: FontWeight.w400,
+    fontSize: 18,
+    // height: 21.47.toFigmaHeight(20),
+  );
+    static TextStyle text18w400Secondary = TextStyle(
+    color: Colors.white,
+    // fontFamily: fontFamily,
+    fontFamily: ".SF Pro Display",
+    fontWeight: FontWeight.w400,
+    fontSize: 18,
+    // height: 21.47.toFigmaHeight(20),
+  );
 //   static TextStyle text18w400Second = TextStyle(
 //     color: TextColors.textSecond,
 //     // fontFamily: fontFamily,

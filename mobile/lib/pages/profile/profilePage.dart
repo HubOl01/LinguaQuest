@@ -2,7 +2,7 @@ import 'package:LinguaQuest/core/models/avatarModel.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../components/bottomSheet.dart';
+import '../../components/bottomSheetAvatar.dart';
 import '../../core/utils/cubit/current_avatar_cubit.dart';
 import '../../core/utils/toastShow.dart';
 
@@ -36,7 +36,7 @@ class ProfilePage extends StatelessWidget {
                             elevation: 10,
                             context: context,
                             builder: (BuildContext context) {
-                              return const BottomSheetContent();
+                              return const BottomSheetAvatar();
                             });
                       },
                       child: ClipRRect(

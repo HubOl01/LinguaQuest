@@ -6,6 +6,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_keyboard_visibility/flutter_keyboard_visibility.dart';
 import 'package:get/get.dart';
+import 'core/data/cubit/add_post_cubit.dart';
 import 'core/data/cubit/dictionaries_cubit.dart';
 import 'core/data/cubit/posts_public_cubit.dart';
 import 'core/data/cubit/posts_user_cubit.dart';
@@ -33,6 +34,7 @@ class MyApp extends StatelessWidget {
       providers: [
         BlocProvider(create: (context) => PostsPublicCubit()),
         BlocProvider(create: (context) => PostsUserCubit()),
+        BlocProvider(create: (context) => AddPostCubit()),
         BlocProvider(
           create: (context) =>
               DictionariesCubit(DBDictionary())..fetchDictionaries(),

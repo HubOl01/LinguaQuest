@@ -111,7 +111,7 @@ class _PostState extends State<Post> {
                           : Padding(
                               padding:
                                   const EdgeInsets.symmetric(horizontal: 10.0),
-                              child: Text(widget.description!),
+                              child: Text(widget.description!, maxLines: 5, overflow: TextOverflow.ellipsis,),
                             )),
                 ),
                 Align(

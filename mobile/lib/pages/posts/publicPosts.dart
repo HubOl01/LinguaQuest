@@ -30,6 +30,13 @@ class _PublicPostsState extends State<PublicPosts> {
                 if (state is PostLoading) {
                   return const Center(child: CircularProgressIndicator());
                 } else if (state is PostLoaded) {
+                  if (state.posts.isEmpty) {
+                      return const Center(
+                          child: Text(
+                        "There are no publications, you can publish your entry.",
+                        textAlign: TextAlign.center,
+                      ));
+                    }
                   return ListView.builder(
                     itemCount: state.posts.length,
                     itemBuilder: (context, index) {
@@ -53,7 +60,7 @@ class _PublicPostsState extends State<PublicPosts> {
                 } else if (state is PostError) {
                   return Text(state.message);
                 } else {
-                  return Container();
+                  return const SizedBox();
                 }
               });
             }));

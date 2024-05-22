@@ -1,0 +1,363 @@
+[
+    {
+        "title_module": "Family",
+        "description_module": "В данном модуле мы научимся строить простые предложения в настоящем простом времени и выучим новые слова.",
+        "lessons": [
+            {
+                "title_lesson": "Family - Part 1",
+                "description_lesson": "Основы. Время Present simple.",
+                "rule": "Present simple - настоящее простое время, которое выражает обычное, регулярное, повторяющееся действие в настоящем времени. Образуется при помощи первой основной формы глагола V1. Пример: I play football. Однако для местоимений - He, She, It к глаголу добавляем окончание -s. Пример: He plays football.",
+                "quizzes": [
+                    {
+                        "type": "translate",
+                        "question": "Переведите слово: Mother.",
+                        "url_image": "",
+                        "answer_correct": "Мама",
+                        "answers": [
+                            "Папа",
+                            "Мама",
+                            "Бабушка",
+                            "Дедушка"
+                        ],
+                        "words": null,
+                        "explanation": "Mother - Мама"
+                    },
+                    {
+                        "type": "translate",
+                        "question": "Переведите слово: Father.",
+                        "url_image": "",
+                        "answer_correct": "Папа",
+                        "answers": [
+                            "Бабушка",
+                            "Мама",
+                            "Папа",
+                            "Дедушка"
+                        ],
+                        "words": null,
+                        "explanation": "Father - Папа"
+                    },
+                    {
+                        "type": "image",
+                        "question": "Кто изображен на картинке?",
+                        "url_image": "https://github.com/HubOl01/LinguaQuest/assets/92907395/5bbcb258-59b4-4a1f-9bda-777959bd0efa",
+                        "answer_correct": "Мама",
+                        "answers": [
+                            "Бабушка",
+                            "Мама",
+                            "Дедушка",
+                            "Папа"
+                        ],
+                        "words": null,
+                        "explanation": ""
+                    },
+                    {
+                        "type": "image",
+                        "question": "Кто изображен на картинке?",
+                        "url_image": "https://github.com/HubOl01/LinguaQuest/assets/92907395/46dbd7ea-e879-4bbf-8f17-1e5a34624994",
+                        "answer_correct": "Папа",
+                        "answers": [
+                            "Папа",
+                            "Мама",
+                            "Дедушка",
+                            "Бабушка"
+                        ],
+                        "words": null,
+                        "explanation": ""
+                    },
+                    {
+                        "type": "missing",
+                        "question": "Вставьте пропущенное слово: My mother ___ cooking",
+                        "url_image": "",
+                        "answer_correct": "loves",
+                        "answers": [
+                            "love",
+                            "loves"
+                        ],
+                        "words": null,
+                        "explanation": "Для местоимений - He, She, It к глаголу добавляем окончание -s. Слово mother относится к местоимению she."
+                    },
+                    {
+                        "type": "missing",
+                        "question": "Вставьте пропущенное слово: My father ___ in a bank",
+                        "url_image": "",
+                        "answer_correct": "works",
+                        "answers": [
+                            "works",
+                            "work"
+                        ],
+                        "words": null,
+                        "explanation": "Для местоимений - He, She, It к глаголу добавляем окончание -s. Слово father относится к местоимению he."
+                    },
+                    {
+                        "type": "sentence",
+                        "question": "Составьте предложение: Я люблю свою маму.",
+                        "url_image": "",
+                        "answer_correct": "I love  my mother",
+                        "answers": null,
+                        "words": [
+                            "I",
+                            "mother",
+                            "love",
+                            "my"
+                        ],
+                        "explanation": ""
+                    },
+                    {
+                        "type": "sentence",
+                        "question": "Составьте предложение: Мой папа часто играет в шахматы.",
+                        "url_image": "",
+                        "answer_correct": "My father often plays chess",
+                        "answers": null,
+                        "words": [
+                            "father",
+                            "My",
+                            "plays",
+                            "often",
+                            "chess"
+                        ],
+                        "explanation": ""
+                    }
+                ]
+            },
+            {
+                "title_lesson": "Family - Part 2",
+                "description_lesson": "Основы. Время Present simple. Новые слова.",
+                "rule": "Добавим новые слова: brother - брат, sister - сестра, baby - младенец, grandpa - дедушка, grandma - бабушка.",
+                "quizzes": [
+                    {
+                        "type": "translate",
+                        "question": "Переведите слово: Brother.",
+                        "url_image": "",
+                        "answer_correct": "Брат",
+                        "answers": [
+                            "Мама",
+                            "Сестра",
+                            "Папа",
+                            "Брат"
+                        ],
+                        "words": null,
+                        "explanation": "Brother - Брат."
+                    },
+                    {
+                        "type": "translate",
+                        "question": "Переведите слово: Grandma.",
+                        "url_image": "",
+                        "answer_correct": "Бабушка",
+                        "answers": [
+                            "Мама",
+                            "Бабушка",
+                            "Папа",
+                            "Сестра"
+                        ],
+                        "words": null,
+                        "explanation": "Grandma - бабушка."
+                    },
+                    {
+                        "type": "image",
+                        "question": "Кто изображен на картинке?",
+                        "url_image": "https://github.com/HubOl01/LinguaQuest/assets/92907395/5b167595-41a2-4d58-a460-b768e2d9c5b4",
+                        "answer_correct": "Сестра",
+                        "answers": [
+                            "Мама",
+                            "Бабушка",
+                            "Сестра",
+                            "Дедушка"
+                        ],
+                        "words": null,
+                        "explanation": ""
+                    },
+                    {
+                        "type": "image",
+                        "question": "Кто изображен на картинке?",
+                        "url_image": "https://github.com/HubOl01/LinguaQuest/assets/92907395/0506abcf-65e4-4a6b-9aeb-3f7734030331",
+                        "answer_correct": "Дедушка",
+                        "answers": [
+                            "Дедушка",
+                            "Брат",
+                            "Сестра",
+                            "Мама"
+                        ],
+                        "words": null,
+                        "explanation": ""
+                    },
+                    {
+                        "type": "image",
+                        "question": "Кто изображен на картинке?",
+                        "url_image": "https://github.com/HubOl01/LinguaQuest/assets/92907395/55ee60e2-6288-4f93-8007-14384278e642",
+                        "answer_correct": "Младенец",
+                        "answers": [
+                            "Дедушка",
+                            "Брат",
+                            "Мама",
+                            "Младенец"
+                        ],
+                        "words": null,
+                        "explanation": ""
+                    },
+                    {
+                        "type": "missing",
+                        "question": "Вставьте пропущенное слово: The baby ___ often",
+                        "url_image": "",
+                        "answer_correct": "cries",
+                        "answers": [
+                            "cry",
+                            "cries"
+                        ],
+                        "words": null,
+                        "explanation": "Для местоимений - He, She, It к глаголу добавляем окончание -s. Слово baby относится к местоимению he."
+                    },
+                    {
+                        "type": "sentence",
+                        "question": "Составьте предложение: Я иногда хожу к бабушке.",
+                        "url_image": "",
+                        "answer_correct": "I sometimes go to my grandmother",
+                        "answers": null,
+                        "words": [
+                            "to",
+                            "my",
+                            "sometimes",
+                            "go",
+                            "I",
+                            "grandmother"
+                        ],
+                        "explanation": ""
+                    },
+                    {
+                        "type": "sentence",
+                        "question": "Составьте предложение: Дедушка любит самолеты.",
+                        "url_image": "",
+                        "answer_correct": "Grandpa loves airplanes.",
+                        "answers": null,
+                        "words": [
+                            "Grandpa",
+                            "airplane",
+                            "loves"
+                        ],
+                        "explanation": ""
+                    }
+                ]
+            },
+            {
+                "title_lesson": "Family - Part 3",
+                "description_lesson": "Продолжаем учить новые слова и составлять предложения.",
+                "rule": "Новые слова: aunt - тетя, uncle - дядя, parents - родители, grandparents - бабушка и дедушка.",
+                "quizzes": [
+                    {
+                        "type": "image",
+                        "question": "Кто изображен на картинке?",
+                        "url_image": "https://github.com/HubOl01/LinguaQuest/assets/92907395/bd4e4a5c-b4e6-418c-8795-a54f16509ab7",
+                        "answer_correct": "Дядя",
+                        "answers": [
+                            "Дядя",
+                            "Папа",
+                            "Дедушка",
+                            "Брат"
+                        ],
+                        "words": null,
+                        "explanation": ""
+                    },
+                    {
+                        "type": "image",
+                        "question": "Кто изображен на картинке?",
+                        "url_image": "https://github.com/HubOl01/LinguaQuest/assets/92907395/a3d78ac2-f1c0-4eba-817f-0c5b69effedf",
+                        "answer_correct": "Тетя",
+                        "answers": [
+                            "Сестра",
+                            "Мама",
+                            "Тетя",
+                            "Бабушка"
+                        ],
+                        "words": null,
+                        "explanation": ""
+                    },
+                    {
+                        "type": "image",
+                        "question": "Кто изображен на картинке?",
+                        "url_image": "https://github.com/HubOl01/LinguaQuest/assets/92907395/88cdeecd-a482-4431-ade3-a7ef61f0ceb5",
+                        "answer_correct": "Бабушка и дедушка",
+                        "answers": [
+                            "Бабушка и дедушка",
+                            "Родители",
+                            "Соседи",
+                            "Родственники"
+                        ],
+                        "words": null,
+                        "explanation": ""
+                    },
+                    {
+                        "type": "image",
+                        "question": "Кто изображен на картинке?",
+                        "url_image": "https://github.com/HubOl01/LinguaQuest/assets/92907395/022b95ee-b1a6-41ac-9fa7-2369ec0a71e6",
+                        "answer_correct": "Родители",
+                        "answers": [
+                            "Бабушка и дедушка",
+                            "Гости",
+                            "Родители",
+                            "Родственники"
+                        ],
+                        "words": null,
+                        "explanation": ""
+                    },
+                    {
+                        "type": "sentence",
+                        "question": "Составьте предложение: Мои родители часто работают.",
+                        "url_image": "",
+                        "answer_correct": "My parents often work",
+                        "answers": null,
+                        "words": [
+                            "My",
+                            "often",
+                            "parents",
+                            "work"
+                        ],
+                        "explanation": ""
+                    },
+                    {
+                        "type": "sentence",
+                        "question": "Составьте предложение: Бабушка и дедушка часто дарят мне подарки.",
+                        "url_image": "",
+                        "answer_correct": "Grandparents often give me gifts",
+                        "answers": null,
+                        "words": [
+                            "often",
+                            "Grandparents",
+                            "give",
+                            "gifts",
+                            "me"
+                        ],
+                        "explanation": ""
+                    },
+                    {
+                        "type": "sentence",
+                        "question": "Составьте предложение: Дядя редко к нам приезжает.",
+                        "url_image": "",
+                        "answer_correct": "Uncle rarely comes to us",
+                        "answers": null,
+                        "words": [
+                            "comes",
+                            "rarely",
+                            "Uncle",
+                            "to",
+                            "us"
+                        ],
+                        "explanation": ""
+                    },
+                    {
+                        "type": "sentence",
+                        "question": "Составьте предложение: Наша тетя любит шоппинг.",
+                        "url_image": "",
+                        "answer_correct": "Our aunt loves shopping",
+                        "answers": null,
+                        "words": [
+                            "Our",
+                            "aunt",
+                            "shopping",
+                            "loves"
+                        ],
+                        "explanation": ""
+                    }
+                ]
+            }
+        ]
+    }
+]
