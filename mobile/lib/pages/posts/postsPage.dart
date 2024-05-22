@@ -28,13 +28,13 @@ class _PostPageState extends State<PostPage> {
                 SizedBox(
                   height: 30,
                   child: Tab(
-                    text: "PublicPosts",
+                    text: "All Posts",
                   ),
                 ),
                 SizedBox(
                   height: 30,
                   child: Tab(
-                    text: "ProfilePage",
+                    text: "My Posts",
                   ),
                 ),
               ]),

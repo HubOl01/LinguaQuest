@@ -4,8 +4,8 @@ import '../models/postModel.dart';
 import 'package:http/http.dart' as http;
 
 
-String api_url = dotenv.get('API_URL');
-String api_url_2 = dotenv.get('API_URL_2');
+String api_url = dotenv.get('API_URL_2');
+String api_url_2 = dotenv.get('API_URL');
 Future<void> sendPostRequest(String title, String description, bool isDraft) async {
     final url = Uri.parse('${api_url_2}/posts');
     final postData = PostModel(

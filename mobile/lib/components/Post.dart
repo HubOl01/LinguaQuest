@@ -2,7 +2,12 @@ import 'package:LinguaQuest/core/utils/statuses.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:easy_image_viewer/easy_image_viewer.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get/get.dart';
+
+import '../core/models/avatarModel.dart';
+import '../core/utils/cubit/current_avatar_cubit.dart';
+import '../pages/profile/profilePage.dart';
 
 class Post extends StatefulWidget {
   final String userAvatar;
@@ -58,11 +63,13 @@ class _PostState extends State<Post> {
                   padding: const EdgeInsets.all(8.0),
                   child: Row(
                     children: [
-                      const ClipRRect(
-                        child: CircleAvatar(
-                          backgroundColor: Colors.purple,
-                        ),
-                      ),
+                      BlocProvider(
+                          create: (context) => currentAvatarCubit,
+                          child: BlocBuilder<CurrentAvatarCubit, AvatarModel>(
+                              builder: (context, state) => CircleAvatar(
+                                    backgroundImage:
+                                        AssetImage(state.url_avatar),
+                                  ))),
                       const SizedBox(
                         width: 10,
                       ),
@@ -111,7 +118,7 @@ class _PostState extends State<Post> {
                           : Padding(
                               padding:
                                   const EdgeInsets.symmetric(horizontal: 10.0),
-                              child: Text(widget.description!, maxLines: 5, overflow: TextOverflow.ellipsis,),
+                              child: Text(widget.description!),
                             )),
                 ),
                 Align(
