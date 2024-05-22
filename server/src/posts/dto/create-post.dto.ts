@@ -22,12 +22,11 @@ export class CreatePostDto {
   rejectionReason: string;
   // @ApiProperty({ required: true })
   // @IsOptional()
-  @IsDate()
   date_created: Date;
   // @ApiProperty({ required: true })
   // @IsOptional()
-  @IsDate()
   date_updated: Date;
+
   @ApiProperty({ required: false })
   @IsNumber()
   userId: number;

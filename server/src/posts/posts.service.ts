@@ -8,7 +8,19 @@ export class PostsService {
   constructor(private prisma: PrismaService) {}
 
   create(createPostDto: CreatePostDto) {
-    return this.prisma.post.create({ data: createPostDto });
+    return this.prisma.post.create({
+      data: {
+        title: createPostDto.title,
+        description: createPostDto.description,
+        isDraft: createPostDto.isDraft || false,
+        rejectionReason: createPostDto.rejectionReason,
+        date_created: createPostDto.date_created || new Date(),
+        date_updated: createPostDto.date_updated || new Date(),
+        userId: createPostDto.userId,
+        publicationStatusId: createPostDto.publicationStatusId || 3,
+      },
+    });
+    // return this.prisma.post.create({ data: createPostDto });
   }
 
   findAll() {
