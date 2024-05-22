@@ -30,7 +30,7 @@ class _CardWordsState extends State<CardWords> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Карточки слов"),
+        title: const Text("Word cards"),
       ),
       body: FutureBuilder(
           future: refreshData(),

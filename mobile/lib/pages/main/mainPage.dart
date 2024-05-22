@@ -1,5 +1,6 @@
 import 'package:LinguaQuest/core/models/avatarModel.dart';
 import 'package:LinguaQuest/pages/cardwords/cardWords.dart';
+import 'package:LinguaQuest/pages/dictionary/dictionaryPage.dart';
 import 'package:LinguaQuest/pages/profile/profilePage.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -7,6 +8,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 
 import '../../core/utils/cubit/current_avatar_cubit.dart';
+import '../rulesPage/rulesPage.dart';
 
 class MainPage extends StatelessWidget {
   const MainPage({super.key});
@@ -25,7 +27,11 @@ class MainPage extends StatelessWidget {
                       bottomLeft: Radius.circular(20),
                       bottomRight: Radius.circular(20))),
               actions: [
-                // IconButton(onPressed: (){}, icon: Icon(Icons.))
+                IconButton(
+                    onPressed: () {
+                      Get.to(RulesPage());
+                    },
+                    icon: Icon(Icons.rule_sharp))
               ],
               flexibleSpace: FlexibleSpaceBar(
                 expandedTitleScale: 1,
@@ -83,32 +89,36 @@ class MainPage extends StatelessWidget {
                           Expanded(
                             child: SizedBox(
                               height: 100,
-                              child: Card(
-                                margin: const EdgeInsets.all(0),
-                                elevation: 0,
-                                shape: RoundedRectangleBorder(
-                                  // side: BorderSide(color: Colors.white70, width: 1),
-                                  borderRadius: BorderRadius.circular(15),
-                                ),
-                                color: Colors.white,
-                                child: Row(
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    Text(
-                                      "Dictionary",
-                                      style: TextStyle(
-                                          fontSize: 20,
-                                          fontWeight: FontWeight.bold),
-                                    ),
-                                    const SizedBox(
-                                      width: 10,
-                                    ),
-                                    SvgPicture.asset(
-                                      'assets/icons/dictionary.svg',
-                                      height: 30,
-                                    )
-                                  ],
+                              child: GestureDetector(
+                                onTap: () => Get.to(const DictionaryPage()),
+                                child: Card(
+                                  margin: const EdgeInsets.all(0),
+                                  elevation: 0,
+                                  shape: RoundedRectangleBorder(
+                                    // side: BorderSide(color: Colors.white70, width: 1),
+                                    borderRadius: BorderRadius.circular(15),
+                                  ),
+                                  color: Colors.white,
+                                  child: Row(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.center,
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      Text(
+                                        "Dictionary",
+                                        style: TextStyle(
+                                            fontSize: 20,
+                                            fontWeight: FontWeight.bold),
+                                      ),
+                                      const SizedBox(
+                                        width: 10,
+                                      ),
+                                      SvgPicture.asset(
+                                        'assets/icons/dictionary.svg',
+                                        height: 30,
+                                      )
+                                    ],
+                                  ),
                                 ),
                               ),
                             ),

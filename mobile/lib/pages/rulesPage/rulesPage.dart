@@ -1,4 +1,16 @@
-Имя существительное (The Noun)
+import 'package:flutter/material.dart';
+import 'package:flutter_markdown/flutter_markdown.dart';
+// https://english03.ru/spravochnik
+class RulesPage extends StatelessWidget {
+  const RulesPage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: Text("Rules"),),
+      body: Markdown(
+        data: '''
+## Имя существительное (The Noun)
 Имя существительное – часть речи, обозначающая предмет и отвечающая на вопросы: кто это ? (Who is this ?) или что это ? (What is this ?)
 
 По своему значению имена существительные делятся: на собственные – Jack Sparrow – Джек Воробей, Great Britain – Великобритания и нарицательные a table – стол,  snow – снег,  freedom – свобода
@@ -13,7 +25,7 @@
 
 Большинство имён существительных в английском языке употребляется с артиклями.
 
-Артикль (The Article)
+## Артикль (The Article)
 Ставится перед существительным или перед словами, являющимися определениями к нему.
 
 Неопределённый артикль ‘a’ (‘an’ – перед словами, начинающимися с гласной) происходит от числительного one и означает: один, один из многих, какой-то, любой. Unit→ 
@@ -60,12 +72,12 @@ England, Russia, London, Mr.Johnson, Tuscany.
 – We always go to the Black Sea in summer.  Мы всегда ездим на Чёрное Море летом.
 – English classes are on Monday. Занятия английским в понедельник.
 
-Образование множественного числа существительных (Plural)
+## Образование множественного числа существительных (Plural)
 Основным способом образования множественного числа имён существительных является прибавление окончания +s или +es к форме существительного в единственном числе Unit→
 +s                           +es
-a bag – bags     a glass – glasses
-a cat – cats      a fox – foxes
-a rose – roses   a watch – watches
+a bag – bags        a glass – glasses
+a cat – cats        a fox – foxes
+a rose – roses      a watch – watches
 a bush – bushes
 Имена существительные, оканчивающиеся на +y с предшествующей согласной, образуют множественное число путём прибавления окончания +es, причём +у меняется и получается +ies.
 a dictionary – dictionaries.
@@ -81,19 +93,19 @@ a wife – wives
 
 Ряд существительных образуют форму множественного числа особым образом (исключения) Unit→
 ед. ч.              мн. ч.
-man                men
-woman           women
-foot                 feet
+man                 men
+woman               women
+foot                feet
 tooth               teeth
-goose             geese
-mouse            mice
+goose               geese
+mouse               mice
 child               children
-sheep            sheep
-deer               deer
+sheep               sheep
+deer                deer
 
 Это не полный список.
 
-Падеж имён существительных
+## Падеж имён существительных
 В современном английском языке существительное имеет два падежа: общий и притяжательный.
 Существительное в общем падеже не имеет специальных окончаний, его отношение к другим словам в предложении определяется местом в предложении и смыслом.
 – The student asked the teacher.  Студент спросил преподавателя.
@@ -110,3 +122,7 @@ girls‘ books – книги девочек
 to the student – студенту
 by the student – студентом
 about the student – о студенте и т.д.
+'''),
+    );
+  }
+}

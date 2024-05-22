@@ -1,4 +1,5 @@
 import 'package:LinguaQuest/pages/chats/chatsPage.dart';
+import 'package:LinguaQuest/pages/games/gamesPage.dart';
 import 'package:LinguaQuest/pages/main/mainPage.dart';
 import 'package:LinguaQuest/pages/posts/postsPage.dart';
 import 'package:flutter/material.dart';
@@ -79,6 +80,10 @@ class _ButtomNavigationState extends State<ButtomNavigation> {
                               icon: Icon(Icons.school_outlined),
                               label: "Main",
                               tooltip: "Main"),
+                          // BottomNavigationBarItem(
+                          //     icon: Icon(Icons.games),
+                          //     label: "games",
+                          //     tooltip: "games"),
                           BottomNavigationBarItem(
                               icon: Icon(Icons.newspaper),
                               label: "Posts",
@@ -106,6 +111,7 @@ class _ButtomNavigationState extends State<ButtomNavigation> {
 
 List<Widget> pages = [
   const MainPage(),
+  // const GamesPage(),
   const PostPage(),
   const ChatPage(),
   const ProfilePage()

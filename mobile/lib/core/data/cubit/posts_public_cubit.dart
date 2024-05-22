@@ -1,5 +1,3 @@
-import 'dart:convert';
-
 import 'package:LinguaQuest/core/models/postModel.dart';
 import 'package:bloc/bloc.dart';
 import 'package:meta/meta.dart';
@@ -24,7 +22,7 @@ class PostsPublicCubit extends Cubit<PostsPublicState> {
       );
 
       if (response.statusCode == 200 || response.statusCode == 201) {
-        final List<dynamic> posts = json.decode(response.body);
+        final List<PostModel> posts = postsFromJson(response.body);
         emit(PostLoaded(posts));
       } else {
         emit(PostError('Ошибка (getPostsPublic): ${response.statusCode}'));

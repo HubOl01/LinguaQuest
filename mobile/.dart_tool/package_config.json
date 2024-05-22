@@ -98,6 +98,12 @@
       "languageVersion": "2.19"
     },
     {
+      "name": "equatable",
+      "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/equatable-2.0.5",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "fake_async",
       "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/fake_async-1.3.1",
       "packageUri": "lib/",
@@ -120,6 +126,12 @@
       "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/fixnum-1.1.0",
       "packageUri": "lib/",
       "languageVersion": "2.19"
+    },
+    {
+      "name": "flip_card",
+      "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/flip_card-0.7.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
     },
     {
       "name": "flutter",
@@ -198,6 +210,18 @@
       "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_lints-3.0.2",
       "packageUri": "lib/",
       "languageVersion": "3.1"
+    },
+    {
+      "name": "flutter_markdown",
+      "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_markdown-0.7.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.3"
+    },
+    {
+      "name": "flutter_slidable",
+      "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_slidable-3.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
     },
     {
       "name": "flutter_svg",
@@ -282,6 +306,12 @@
       "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/lints-3.0.0",
       "packageUri": "lib/",
       "languageVersion": "3.0"
+    },
+    {
+      "name": "markdown",
+      "rootUri": "file:///C:/Users/IT-Oleg/AppData/Local/Pub/Cache/hosted/pub.dev/markdown-7.2.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
     },
     {
       "name": "matcher",
@@ -536,7 +566,7 @@
       "languageVersion": "3.3"
     }
   ],
-  "generated": "2024-05-21T22:42:59.615902Z",
+  "generated": "2024-05-22T08:26:45.975341Z",
   "generator": "pub",
   "generatorVersion": "3.4.0",
   "flutterRoot": "file:///C:/dev/flutter",

@@ -26,6 +26,12 @@ dependencies:
   flutter_dotenv: ^5.1.0
   flutter_card_swiper: ^7.0.1
   flutter_svg: ^2.0.10+1
+  flutter_markdown: ^0.7.1
+  path: ^1.9.0
+  sqflite: ^2.3.3+1
+  flutter_slidable: ^3.1.0
+  flip_card: ^0.7.0
+  equatable: ^2.0.5
 
 dev_dependencies:
   flutter_test:

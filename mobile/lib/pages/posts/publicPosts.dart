@@ -21,34 +21,41 @@ class _PublicPostsState extends State<PublicPosts> {
       super.initState();
     }
 
-    return Scaffold(body: FutureBuilder(
-      future: context.read<PostsPublicCubit>().getPostsPublic(),
-      builder: (context, snapshot) {
-        return BlocBuilder<PostsPublicCubit, PostsPublicState>(
-            builder: (context, state) {
-          if (state is PostLoading) {
-            return const Center(child: CircularProgressIndicator());
-          } else if (state is PostLoaded) {
-            return ListView.builder(
-              itemCount: state.posts.length,
-              itemBuilder: (context, index) {
-                final post = state.posts[index];
-                return Post(
-                  isPostPublic: true,
-                    description: post['description'],
-                    userAvatar: "",
-                    user: "Max",
-                    like: false,
-                    status: 1);
-              },
-            );
-          } else if (state is PostError) {
-            return Text(state.message);
-          } else {
-            return Container();
-          }
-        });
-      }
-    ));
+    return Scaffold(
+        body: FutureBuilder(
+            future: context.read<PostsPublicCubit>().getPostsPublic(),
+            builder: (context, snapshot) {
+              return BlocBuilder<PostsPublicCubit, PostsPublicState>(
+                  builder: (context, state) {
+                if (state is PostLoading) {
+                  return const Center(child: CircularProgressIndicator());
+                } else if (state is PostLoaded) {
+                  return ListView.builder(
+                    itemCount: state.posts.length,
+                    itemBuilder: (context, index) {
+                      final post = state.posts[index];
+                      return Column(
+                        children: [
+                          Post(
+                              isPostPublic: true,
+                              description: post.description,
+                              userAvatar: "",
+                              user: "Max",
+                              like: false,
+                              status: 1),
+                          SizedBox(
+                            height: index == state.posts.length - 1 ? 60 : 0,
+                          )
+                        ],
+                      );
+                    },
+                  );
+                } else if (state is PostError) {
+                  return Text(state.message);
+                } else {
+                  return Container();
+                }
+              });
+            }));
   }
 }

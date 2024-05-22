@@ -59,7 +59,7 @@ class PostModel {
         title: json["title"],
         description: json["description"],
         isDraft: json["isDraft"],
-        rejectionReason: json["rejectionReason"],
+        rejectionReason: json["rejectionReason"] ?? "",
         dateCreated: DateTime.parse(json["date_created"]),
         dateUpdated: DateTime.parse(json["date_updated"]),
         userId: json["userId"],
@@ -71,10 +71,10 @@ class PostModel {
         "title": title,
         "description": description,
         "isDraft": isDraft,
-        // "rejectionReason": rejectionReason,
-        // "date_created": dateCreated!.toIso8601String(),
-        // "date_updated": dateUpdated!.toIso8601String(),
+        "rejectionReason": rejectionReason ?? "",
+        "date_created": dateCreated!.toIso8601String(),
+        "date_updated": dateUpdated!.toIso8601String(),
         "userId": userId,
-        // "publicationStatusId": publicationStatusId ?? 3,
+        "publicationStatusId": publicationStatusId ?? 3,
     };
 }

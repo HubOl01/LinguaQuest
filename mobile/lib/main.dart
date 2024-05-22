@@ -1,12 +1,12 @@
+import 'package:LinguaQuest/core/data/DBdictionary.dart';
 import 'package:LinguaQuest/pages/splashScreen/SplashScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:get/get.dart';
-
-import 'BottomNavigation.dart';
+import 'core/data/cubit/dictionaries_cubit.dart';
 import 'core/data/cubit/posts_public_cubit.dart';
-import 'core/data/postData.dart';
+import 'core/data/cubit/posts_user_cubit.dart';
 
 Future main() async {
   await dotenv.load(fileName: ".env");
@@ -19,8 +19,15 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BlocProvider(
-      create: (context) => PostsPublicCubit(),
+    return MultiBlocProvider(
+      providers: [
+        BlocProvider(create: (context) => PostsPublicCubit()),
+        BlocProvider(create: (context) => PostsUserCubit()),
+        BlocProvider(
+          create: (context) =>
+              DictionariesCubit(DBDictionary())..fetchDictionaries(),
+        )
+      ],
       child: GetMaterialApp(
         title: 'LinguaQuest',
         debugShowCheckedModeBanner: false,
