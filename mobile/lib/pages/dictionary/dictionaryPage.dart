@@ -49,7 +49,7 @@ class _DictionaryPageState extends State<DictionaryPage> {
                     backgroundColor: Theme.of(context).colorScheme.primary,
                     foregroundColor: Theme.of(context).colorScheme.onPrimary,
                     icon: Icons.edit,
-                    label: 'Поделиться',
+                    label: 'Изменить',
                   ),
                   SlidableAction(
                     autoClose: true,
@@ -74,7 +74,7 @@ class _DictionaryPageState extends State<DictionaryPage> {
                             child: Padding(
                               padding: const EdgeInsets.all(8.0),
                               child: SizedBox(
-                                height: 200,
+                                // height: 200,
                                 width: context.width,
                                 child: Column(
                                   mainAxisSize: MainAxisSize.min,
