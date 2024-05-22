@@ -1,5 +1,7 @@
+import 'package:LinguaQuest/pages/posts/EditPost.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:get/get.dart';
 
 import '../../components/Post.dart';
 
@@ -108,7 +110,10 @@ Feel free to share this on social media or use it as inspiration for your own po
                   duration: Duration(milliseconds: 350),
                   opacity: _showFab ? 1 : 0,
                   child: FloatingActionButton.extended(
-                      onPressed: () {}, label: Text("Добавить пост")),
+                      onPressed: () {
+                        Get.to(EditorPost());
+                      },
+                      label: Text("Добавить пост")),
                 ),
               ))
         ],

@@ -1,11 +1,11 @@
-// import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 
-// import 'Colors.dart';
+import 'Colors.dart';
 
 // const String fontFamily = "Helvetica Roman";
 // const String fontFamilyBold = "Helvetica Thin";
 
-// class TextStyles {
+class TextStyles {
 //   static TextStyle text48w500ClashDisplay = TextStyle(
 //     color: TextColors.textPrimary,
 //     fontFamily: "ClashDisplay",
@@ -19,14 +19,13 @@
 //     fontWeight: FontWeight.w500,
 //     fontSize: 32,
 //   );
-//   static TextStyle text24w800 = TextStyle(
-//     color: TextColors.textPrimary,
-//     // fontFamily: fontFamily,
-//     fontFamily: ".SF Pro Display",
-//     fontWeight: FontWeight.w800,
-//     fontSize: 24,
-//     // height: 31.2.toFigmaHeight(20),
-//   );
+  static TextStyle text24w800 = TextStyle(
+    color: Colors.white,
+    // fontFamily: fontFamily,
+    fontWeight: FontWeight.w800,
+    fontSize: 24,
+    // height: 31.2.toFigmaHeight(20),
+  );
 //   static TextStyle text24w500 = TextStyle(
 //     color: TextColors.textPrimary,
 //     // fontFamily: fontFamily,
@@ -44,14 +43,11 @@
 //     // height: 31.2.toFigmaHeight(20),
 //   );
 
-//   static TextStyle text24w400 = TextStyle(
-//     color: TextColors.textPrimary,
-//     // fontFamily: fontFamily,
-//     fontFamily: ".SF Pro Display",
-//     fontWeight: FontWeight.w400,
-//     fontSize: 24,
-//     // height: 31.2.toFigmaHeight(20),
-//   );
+  // static TextStyle text24w400 = TextStyle(
+  //   color: Colors.white,
+  //   fontWeight: FontWeight.w400,
+  //   fontSize: 24,
+  // );
 //   static TextStyle text24w400Second = TextStyle(
 //     color: TextColors.textSecond,
 //     // fontFamily: fontFamily,
@@ -173,7 +169,7 @@
 //     fontSize: 12,
 //     // height: 19.09.toFigmaHeight(20),
 //   );
-// }
+}
 
 // extension FigmaDimention on double {
 //   double toFigmaHeight(double fontSize) {

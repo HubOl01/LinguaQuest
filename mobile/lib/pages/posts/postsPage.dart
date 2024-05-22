@@ -1,7 +1,5 @@
-import 'package:LinguaQuest/components/Post.dart';
 import 'package:LinguaQuest/pages/posts/profilePosts.dart';
 import 'package:LinguaQuest/pages/posts/publicPosts.dart';
-import 'package:LinguaQuest/pages/profile/profilePage.dart';
 import 'package:flutter/material.dart';
 
 class PostPage extends StatefulWidget {
@@ -18,24 +16,28 @@ class _PostPageState extends State<PostPage> {
       length: 2,
       child: SafeArea(
         child: Scaffold(
-          body: TabBarView(
-            children: [PublicPosts(), ProfilePosts()]),
+          body: TabBarView(children: [PublicPosts(), ProfilePosts()]),
           appBar: TabBar(
-            indicator: UnderlineTabIndicator(
-              borderSide: BorderSide(width: 2.0, color: Colors.deepPurple.shade900),
-              insets: EdgeInsets.symmetric(horizontal: 30.0), 
-            ),
-            labelColor: Colors.deepPurple.shade900,
-            tabs: [
-              Tab(
-                text: "PublicPosts",
-                
+              indicator: UnderlineTabIndicator(
+                borderSide: BorderSide(
+                    width: 2.0, color: Theme.of(context).colorScheme.primary),
+                insets: EdgeInsets.symmetric(horizontal: 30.0),
               ),
-              Tab(
-                text: "ProfilePage",
-              ),
-            ]),
-          
+              labelColor: Theme.of(context).colorScheme.primary,
+              tabs: [
+                SizedBox(
+                  height: 30,
+                  child: Tab(
+                    text: "PublicPosts",
+                  ),
+                ),
+                SizedBox(
+                  height: 30,
+                  child: Tab(
+                    text: "ProfilePage",
+                  ),
+                ),
+              ]),
         ),
       ),
     );

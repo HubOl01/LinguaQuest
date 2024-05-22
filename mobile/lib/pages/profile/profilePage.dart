@@ -1,7 +1,12 @@
+import 'package:LinguaQuest/core/models/avatarModel.dart';
 import 'package:flutter/material.dart';
-import 'package:fluttertoast/fluttertoast.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../../components/bottomSheet.dart';
+import '../../core/utils/cubit/current_avatar_cubit.dart';
 import '../../core/utils/toastShow.dart';
+
+CurrentAvatarCubit currentAvatarCubit = CurrentAvatarCubit();
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage({super.key});
@@ -10,29 +15,51 @@ class ProfilePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView(
       children: [
-        Container(
-          height: 200,
-          // color: Colors.gr,
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              ClipRRect(
-                borderRadius: BorderRadius.circular(25),
-                child: Image.network(
-                  "https://sun9-71.userapi.com/impg/DkA2EBbxazNq1ZTUP-jColx-jZaqIMaZNIg-hg/OcLjiyUbG-w.jpg?size=1024x1024&quality=95&sign=8952210a4d259c027e4bc0430d13bf9c&c_uniq_tag=YHUBEMe01IH7r6oKHNbaQ3QuNDnhfass0o57WxjLRKo&type=album",
-                  height: 150,
-                  width: 150,
+        BlocProvider(
+          create: (context) => currentAvatarCubit,
+          child: BlocBuilder<CurrentAvatarCubit, AvatarModel>(
+            builder: (context, state) {
+              return Container(
+                height: 200,
+                // color: Colors.gr,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    GestureDetector(
+                      onTap: () {
+                        showModalBottomSheet(
+                            shape: const RoundedRectangleBorder(
+                                borderRadius: BorderRadius.only(
+                                    topLeft: Radius.circular(20),
+                                    topRight: Radius.circular(20))),
+                            elevation: 10,
+                            context: context,
+                            builder: (BuildContext context) {
+                              return const BottomSheetContent();
+                            });
+                      },
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(25),
+                        child: Image.asset(
+                          state.url_avatar,
+                          height: 150,
+                          width: 150,
+                        ),
+                      ),
+                    ),
+                    const SizedBox(
+                      height: 10,
+                    ),
+                    Text(
+                      "Max, 20",
+                      style:
+                          TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
+                    )
+                  ],
                 ),
-              ),
-              const SizedBox(
-                height: 10,
-              ),
-              Text(
-                "Max, 20",
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
-              )
-            ],
+              );
+            },
           ),
         ),
         ListTile(
@@ -83,6 +110,4 @@ class ProfilePage extends StatelessWidget {
       ],
     );
   }
-
-  
 }

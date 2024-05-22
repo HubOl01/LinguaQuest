@@ -7,6 +7,7 @@ import 'package:get/get.dart';
 class Post extends StatefulWidget {
   final String userAvatar;
   final String user;
+  bool isPostPublic;
   String? image;
   String? title;
   String? description;
@@ -19,7 +20,8 @@ class Post extends StatefulWidget {
       this.image,
       required this.like,
       this.description,
-      required this.status});
+      required this.status,
+      this.isPostPublic = false});
 
   @override
   State<Post> createState() => _PostState();
@@ -44,7 +46,9 @@ class _PostState extends State<Post> {
           });
         },
         child: Material(
-          elevation: 5,
+          borderRadius: BorderRadius.all(Radius.circular(30)),
+          // shape: S,
+          elevation: 2,
           child: Container(
             child: Column(
               mainAxisSize: MainAxisSize.min,
@@ -54,32 +58,43 @@ class _PostState extends State<Post> {
                   padding: const EdgeInsets.all(8.0),
                   child: Row(
                     children: [
-                      ClipRRect(
+                      const ClipRRect(
                         child: CircleAvatar(
                           backgroundColor: Colors.purple,
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 10,
                       ),
                       Text(widget.user)
                     ],
                   ),
                 ),
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 10.0),
-                  child: Container(
-                    decoration: BoxDecoration(
-                      color: statusColor(widget.status),
-                      borderRadius: BorderRadius.circular(30),
-                    ),
-                    child: Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 10.0, vertical: 5),
-                      child: Text(status(widget.status), style: TextStyle(fontSize: 12, color: Colors.white),),
-                    ),
-                  ),
-                ),
-                SizedBox(height: 10,),
+                widget.isPostPublic
+                    ? const SizedBox()
+                    : Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 10.0),
+                        child: Container(
+                          decoration: BoxDecoration(
+                            color: statusColor(widget.status),
+                            borderRadius: BorderRadius.circular(30),
+                          ),
+                          child: Padding(
+                            padding: const EdgeInsets.symmetric(
+                                horizontal: 10.0, vertical: 5),
+                            child: Text(
+                              status(widget.status),
+                              style: const TextStyle(
+                                  fontSize: 12, color: Colors.white),
+                            ),
+                          ),
+                        ),
+                      ),
+                widget.isPostPublic
+                    ? const SizedBox()
+                    : const SizedBox(
+                        height: 10,
+                      ),
                 GestureDetector(
                   onTap: () {
                     showImageViewer(context, Image.network(widget.image!).image,
@@ -94,21 +109,25 @@ class _PostState extends State<Post> {
                               fit: BoxFit.cover,
                             )
                           : Padding(
-                            padding: const EdgeInsets.symmetric(horizontal: 10.0),
-                            child: Text(widget.description!),
-                          )),
+                              padding:
+                                  const EdgeInsets.symmetric(horizontal: 10.0),
+                              child: Text(widget.description!),
+                            )),
                 ),
                 Align(
                   alignment: Alignment.centerLeft,
-                  child: IconButton(
-                      onPressed: () {
+                  child: GestureDetector(
+                      onTap: () {
                         setState(() {
                           isLiked = !isLiked;
                         });
                       },
-                      icon: Icon(
-                        isLiked ? Icons.favorite : Icons.favorite_border,
-                        color: isLiked ? Colors.red : Colors.black45,
+                      child: Padding(
+                        padding: const EdgeInsets.all(15.0),
+                        child: Icon(
+                          isLiked ? Icons.favorite : Icons.favorite_border,
+                          color: isLiked ? Colors.red : Colors.black45,
+                        ),
                       )),
                 ),
               ],
@@ -119,5 +138,3 @@ class _PostState extends State<Post> {
     );
   }
 }
-
-

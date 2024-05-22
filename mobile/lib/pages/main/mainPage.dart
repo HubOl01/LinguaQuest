@@ -1,7 +1,12 @@
+import 'package:LinguaQuest/core/models/avatarModel.dart';
 import 'package:LinguaQuest/pages/cardwords/cardWords.dart';
+import 'package:LinguaQuest/pages/profile/profilePage.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
+
+import '../../core/utils/cubit/current_avatar_cubit.dart';
 
 class MainPage extends StatelessWidget {
   const MainPage({super.key});
@@ -14,13 +19,14 @@ class MainPage extends StatelessWidget {
           return <Widget>[
             SliverAppBar(
               elevation: 0,
+              automaticallyImplyLeading: false,
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.only(
                       bottomLeft: Radius.circular(20),
                       bottomRight: Radius.circular(20))),
-                      actions: [
-                        // IconButton(onPressed: (){}, icon: Icon(Icons.))
-                      ],
+              actions: [
+                // IconButton(onPressed: (){}, icon: Icon(Icons.))
+              ],
               flexibleSpace: FlexibleSpaceBar(
                 expandedTitleScale: 1,
                 // titlePadding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
@@ -61,7 +67,10 @@ class MainPage extends StatelessWidget {
                                       const SizedBox(
                                         width: 10,
                                       ),
-                                      SvgPicture.asset('assets/icons/cards.svg', height: 30,)
+                                      SvgPicture.asset(
+                                        'assets/icons/cards.svg',
+                                        height: 30,
+                                      )
                                     ],
                                   ),
                                 ),
@@ -96,7 +105,9 @@ class MainPage extends StatelessWidget {
                                       width: 10,
                                     ),
                                     SvgPicture.asset(
-                                        'assets/icons/dictionary.svg', height: 30,)
+                                      'assets/icons/dictionary.svg',
+                                      height: 30,
+                                    )
                                   ],
                                 ),
                               ),
@@ -109,7 +120,21 @@ class MainPage extends StatelessWidget {
                 ),
               ),
               // bottom: ,
-              title: Text("Main"),
+              title: BlocProvider(
+                  create: (context) => currentAvatarCubit,
+                  child: BlocBuilder<CurrentAvatarCubit, AvatarModel>(
+                      builder: (context, state) => Row(
+                            children: [
+                              CircleAvatar(
+                                backgroundImage: AssetImage(state.url_avatar),
+                              ),
+                              const SizedBox(
+                                width: 10,
+                              ),
+                              const Text("Max"),
+                            ],
+                          ))),
+
               pinned: true,
               expandedHeight: 170,
               floating: true,

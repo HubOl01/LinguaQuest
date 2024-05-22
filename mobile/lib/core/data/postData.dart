@@ -5,8 +5,9 @@ import 'package:http/http.dart' as http;
 
 
 String api_url = dotenv.get('API_URL');
+String api_url_2 = dotenv.get('API_URL_2');
 Future<void> sendPostRequest(String title, String description, bool isDraft) async {
-    final url = Uri.parse('${api_url}/posts');
+    final url = Uri.parse('${api_url_2}/posts');
     final postData = PostModel(
       title: title.trim(),
       description: description.trim(),
@@ -30,8 +31,8 @@ Future<void> sendPostRequest(String title, String description, bool isDraft) asy
     }
   }
 
-  Future<void> getMyPosts() async {
-    final url = Uri.parse('${api_url}/posts/get-only-user');
+  Future<void> getMyPosts(int idUser) async {
+    final url = Uri.parse('${api_url_2}/posts/get-only-user?userId=${idUser}');
 
     final response = await http.get(
       url,
@@ -48,7 +49,7 @@ Future<void> sendPostRequest(String title, String description, bool isDraft) asy
   }
 
    Future<void> getPostsPublic() async {
-    final url = Uri.parse('${api_url}/posts/get-only-publication');
+    final url = Uri.parse('${api_url_2}/posts/get-only-publication');
 
     final response = await http.get(
       url,

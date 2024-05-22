@@ -13,7 +13,7 @@ class PostsPublicCubit extends Cubit<PostsPublicState> {
 
   Future<void> getPostsPublic() async {
     emit(PostLoading());
-    final url = Uri.parse('$api_url/posts/get-only-publication');
+    final url = Uri.parse('$api_url_2/posts/get-only-publication');
 
     try {
       final response = await http.get(
@@ -24,7 +24,7 @@ class PostsPublicCubit extends Cubit<PostsPublicState> {
       );
 
       if (response.statusCode == 200 || response.statusCode == 201) {
-        final List<PostModel> posts = json.decode(response.body);
+        final List<dynamic> posts = json.decode(response.body);
         emit(PostLoaded(posts));
       } else {
         emit(PostError('Ошибка (getPostsPublic): ${response.statusCode}'));

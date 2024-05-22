@@ -1,7 +1,7 @@
 part of 'posts_public_cubit.dart';
 
 @immutable
-sealed class PostsPublicState {}
+abstract class PostsPublicState {}
 
 final class PostsPublicInitial extends PostsPublicState {}
 

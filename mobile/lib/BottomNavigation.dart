@@ -2,6 +2,7 @@ import 'package:LinguaQuest/pages/chats/chatsPage.dart';
 import 'package:LinguaQuest/pages/main/mainPage.dart';
 import 'package:LinguaQuest/pages/posts/postsPage.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -16,6 +17,12 @@ class ButtomNavigation extends StatefulWidget {
 }
 
 class _ButtomNavigationState extends State<ButtomNavigation> {
+  @override
+  void initState() {
+    SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual,
+        overlays: SystemUiOverlay.values);
+    super.initState();
+  }
   @override
   Widget build(BuildContext context) {
     return BlocProvider(

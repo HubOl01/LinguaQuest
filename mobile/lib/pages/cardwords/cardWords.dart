@@ -71,11 +71,13 @@ class _CardWordsState extends State<CardWords> {
                         //   child: const Icon(Icons.rotate_left),
                         // ),
                         FloatingActionButton(
+                          backgroundColor: Theme.of(context).colorScheme.primary,
                           onPressed: () =>
                               controller.swipe(CardSwiperDirection.left),
                           child: const Icon(Icons.keyboard_arrow_left),
                         ),
                         FloatingActionButton(
+                          backgroundColor: Theme.of(context).colorScheme.primary,
                           onPressed: () =>
                               controller.swipe(CardSwiperDirection.right),
                           child: const Icon(Icons.keyboard_arrow_right),
