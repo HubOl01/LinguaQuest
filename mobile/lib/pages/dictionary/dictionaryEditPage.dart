@@ -47,7 +47,7 @@ class _DictionaryEditorPageState extends State<DictionaryEditorPage> {
         padding: const EdgeInsets.all(16.0),
         child: Form(
           key: _formKey,
-          child: Column(
+          child: ListView(
             children: [
               TextFormField(
                 controller: _contentController,
@@ -79,50 +79,52 @@ class _DictionaryEditorPageState extends State<DictionaryEditorPage> {
                 maxLines: null,
                 decoration: InputDecoration(labelText: 'Example'),
               ),
-              // const SizedBox(height: 20),
-              const Spacer(),
-              SizedBox(
-                width: context.width,
-                height: 40,
-                child: ElevatedButton(
-                  onPressed: () async {
-                    if (_formKey.currentState!.validate()) {
-                      // print(widget.dictionaryModel!.dateCreated);
-                      if (widget.dictionaryModel != null) {
-                        final dictionary = DictionaryModel(
-                          idDictionary: widget.dictionaryModel!.idDictionary,
-                          content: _contentController.text,
-                          translate: _translateController.text,
-                          transcription: _transcriptionController.text,
-                          audiofile: widget.dictionaryModel!.audiofile,
-                          example: _exampleController.text,
-                          userId: widget.dictionaryModel!.userId,
-                          dateCreated: widget.dictionaryModel!.dateCreated,
-                        );
-                        context
-                            .read<DictionariesCubit>()
-                            .updateDictionary(dictionary);
-                      } else {
-                        final dictionary = DictionaryModel(
-                          content: _contentController.text,
-                          translate: _translateController.text,
-                          transcription: _transcriptionController.text,
-                          audiofile: "",
-                          example: _exampleController.text,
-                          userId: 1,
-                          dateCreated: DateTime.now(),
-                        );
-                        context
-                            .read<DictionariesCubit>()
-                            .addDictionary(dictionary);
+              const SizedBox(height: 20),
+              // const Spacer(),
+              Flexible(
+                child: SizedBox(
+                  width: context.width,
+                  height: 40,
+                  child: ElevatedButton(
+                    onPressed: () async {
+                      if (_formKey.currentState!.validate()) {
+                        // print(widget.dictionaryModel!.dateCreated);
+                        if (widget.dictionaryModel != null) {
+                          final dictionary = DictionaryModel(
+                            idDictionary: widget.dictionaryModel!.idDictionary,
+                            content: _contentController.text,
+                            translate: _translateController.text,
+                            transcription: _transcriptionController.text,
+                            audiofile: widget.dictionaryModel!.audiofile,
+                            example: _exampleController.text,
+                            userId: widget.dictionaryModel!.userId,
+                            dateCreated: widget.dictionaryModel!.dateCreated,
+                          );
+                          context
+                              .read<DictionariesCubit>()
+                              .updateDictionary(dictionary);
+                        } else {
+                          final dictionary = DictionaryModel(
+                            content: _contentController.text,
+                            translate: _translateController.text,
+                            transcription: _transcriptionController.text,
+                            audiofile: "",
+                            example: _exampleController.text,
+                            userId: 1,
+                            dateCreated: DateTime.now(),
+                          );
+                          context
+                              .read<DictionariesCubit>()
+                              .addDictionary(dictionary);
+                        }
+                
+                        Get.back();
                       }
-
-                      Get.back();
-                    }
-                  },
-                  child: widget.dictionaryModel != null
-                      ? Text('Update Word')
-                      : Text('Add Word'),
+                    },
+                    child: widget.dictionaryModel != null
+                        ? Text('Update Word')
+                        : Text('Add Word'),
+                  ),
                 ),
               ),
             ],

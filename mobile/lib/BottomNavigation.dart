@@ -18,12 +18,12 @@ class ButtomNavigation extends StatefulWidget {
 }
 
 class _ButtomNavigationState extends State<ButtomNavigation> {
-  @override
-  void initState() {
-    SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual,
-        overlays: SystemUiOverlay.values);
-    super.initState();
-  }
+  // @override
+  // void initState() {
+  //   SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual,
+  //       overlays: SystemUiOverlay.values);
+  //   super.initState();
+  // }
   @override
   Widget build(BuildContext context) {
     return BlocProvider(

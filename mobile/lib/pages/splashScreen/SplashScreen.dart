@@ -18,9 +18,9 @@ class _SplashScreenState extends State<SplashScreen>
   @override
   void initState() {
     super.initState();
-    SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersive);
+    // SystemChrome.setEnabledSystemUIMode(SystemUiMode.edgeToEdge);
     Future.delayed(const Duration(seconds: 2), () {
-      Get.to(const ButtomNavigation());
+      Get.offAll(const ButtomNavigation());
     });
   }
 
